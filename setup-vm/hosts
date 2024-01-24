@@ -1,0 +1,14 @@
+127.0.0.1       localhost 
+127.0.1.1       server-3114394F-virtual-machine
+
+# The following lines are desirable for IPv6 capable hosts
+::1             ip6-localhost ip6-loopback
+fe00::0         ip6-localnet
+ff00::0         ip6-mcastprefix
+ff02::1         ip6-allnodes
+ff02::2         ip6-allrouters
+
+
+172.20.113.62    server-3114394F.localdomain server-3114394F
+192.168.20.100   TESTsvr3114394F.localdoamin
+192.168.20.200   PRODsvr3114394F.localdomain     
