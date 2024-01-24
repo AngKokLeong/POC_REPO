@@ -1,0 +1,43 @@
+pipeline {
+    agent any
+
+    stages {
+
+        stage('ST1 3114394F') {
+            steps {
+
+            }
+        }
+
+        stage('ST2 3114394F') {
+            steps {
+
+            }
+        }
+
+        stage('ST3 3114394F') {
+            steps {
+
+            }
+        }
+
+        stage('ST4 3114394F') {
+            steps {
+
+            }
+        }
+
+        stage ('ST5 3114394F') {
+            steps {
+
+            }
+        }
+
+        stage ('ST6 3114394F') {
+            steps {
+                
+            }
+        }
+
+    }
+}
