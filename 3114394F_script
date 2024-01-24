@@ -1,0 +1,11 @@
+# puppet command to ensure apache2 service is installed and running
+
+
+# puppet command to remove directory /tmp/3114394F/work and recreate directory /tmp/3114394F/work
+
+
+# Clone github repository POC_Repo to container's /tmp/3114394F/work folder
+
+
+
+
