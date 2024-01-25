@@ -7,14 +7,10 @@ network:
     ens33:
       dhcp4: false
       addresses:
-        - "192.168.18.16/24"
+        - "192.168.18.11/24"
         - "172.20.113.62/24"
       
-      routes:
-        - to: default
-          via: 192.168.18.1
-          on-link: true
-          metric: 100
-
+      gateway4: 192.168.18.1
+      
       nameservers:
-        addresses: [192.168.18.1, 8.8.8.8, 8.8.8.4]
+        addresses: [192.168.18.1,8.8.8.8,8.8.8.4]
