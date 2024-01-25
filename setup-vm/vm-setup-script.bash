@@ -23,6 +23,3 @@ cat netplan.yaml > /etc/netplan/01-network-manager-all.yaml
 
 # Apply the netplan
 netplan apply   
-
-
-
