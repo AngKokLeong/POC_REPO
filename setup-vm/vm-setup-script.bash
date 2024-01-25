@@ -3,7 +3,7 @@
 apt-get update -yq
 
 #Install packages
-apt-get install net-tools -yq
+apt-get install net-tools autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.4 libgd-dev -yq
 
 #Setup Docker Packages
 /bin/bash docker-installation-script.bash -v 
