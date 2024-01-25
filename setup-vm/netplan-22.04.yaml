@@ -1,0 +1,20 @@
+# Reference from https://netplan.readthedocs.io/en/stable/netplan-yaml/#properties-for-device-type-ethernets
+
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    ens33:
+      dhcp4: false
+      addresses:
+        - "192.168.18.11/24"
+        - "172.20.113.62/24"
+      
+      routes:
+        - to: default
+          via: 192.168.18.1
+          on-link: true
+          metric: 100
+
+      nameservers:
+        addresses: [192.168.18.1,8.8.8.8,8.8.8.4]
