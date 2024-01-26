@@ -5,7 +5,7 @@ pipeline {
 
         stage('ST1 3114394F') {
             steps {
-
+                echo 'ST1 3114394F: Environment is prepared. Start to rollout to TEST server'
             }
         }
 
