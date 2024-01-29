@@ -1,0 +1,59 @@
+version: '3.9'
+
+networks:
+  monitor-network:
+    name: monitor-network
+    ipam:
+      config:
+        - subnet: 192.168.200.0/24
+
+volumes:
+  apache-server-data-volume:
+  postgres-database-server-data-volume:
+
+services:
+  apache-server:
+    container_name: AngKokLeong-Web-Server
+    hostname: AngKokLeong-Web-Server
+    
+    init: true
+    privileged: true
+
+    build:
+      context: /
+      dockerfile: web-server.Dockerfile
+
+    networks:
+      monitor-network:
+        ipv4_address: 192.168.200.51
+
+    volume:
+      - type: volume
+        source: apache-server-data-volume
+        target: /usr/local/apache2/htdocs/
+  
+  postgres-database-server:
+    container_name: AngKokLeong-Database-Server
+    hostname: AngKokLeong-Database-Server
+
+    init: true
+    privileged: true
+
+    environment:
+      - POSTGRES_PASSWORD: nagios
+      - POSTGRES_USER: nagios
+      - POSTGRES_DB: test-db
+      - PGDATA: /var/lib/postgresql/data
+
+    build:
+      context: /
+      dockerfile: database-server.Dockerfile
+
+    networks:
+      monitor-network:
+        ipv4_address: 192.168.200.52
+
+    volume:
+      - type: volume
+        source: postgres-database-server-data-volume
+        target: /var/lib/postgresql/data
