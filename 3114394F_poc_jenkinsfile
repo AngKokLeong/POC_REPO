@@ -11,7 +11,7 @@ pipeline {
 
         stage('ST2 3114394F') {
             steps {
-
+                echo 'ST2 3114394F: TEST server is backup and updated'
             }
         }
 
