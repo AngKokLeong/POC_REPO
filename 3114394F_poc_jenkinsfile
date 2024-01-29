@@ -17,7 +17,7 @@ pipeline {
 
         stage('ST3 3114394F') {
             steps {
-
+                echo 'ST3 3114394F: Test result for TEST server is generated: TEST-result-file'
             }
         }
 
