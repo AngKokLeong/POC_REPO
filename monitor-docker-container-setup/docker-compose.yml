@@ -30,7 +30,7 @@ services:
     extra_hosts:
       "server-3114394F AngKokLeong-Nagios-Server": "172.20.113.62"
 
-    volume:
+    volumes:
       - type: volume
         source: apache-server-data-volume
         target: /usr/local/apache2/htdocs/
@@ -59,7 +59,7 @@ services:
     extra_hosts:
       "server-3114394F AngKokLeong-Nagios-Server": "172.20.113.62"
 
-    volume:
+    volumes:
       - type: volume
         source: postgres-database-server-data-volume
         target: /var/lib/postgresql/data
