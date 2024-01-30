@@ -47,7 +47,7 @@ ufw allow 12000/tcp
 ufw reload
 
 
-htpasswd -cp /usr/local/nagios/etc/htpasswd.users nagiosadmin password
+htpasswd -cb /usr/local/nagios/etc/htpasswd.users nagiosadmin password
 
 
 
