@@ -35,7 +35,18 @@ services:
         source: apache-server-data-volume
         target: /usr/local/apache2/htdocs/
   
-
+    ports:
+      - target: 22
+        published: 11000
+        host_ip: 127.0.0.1
+        protocol: tcp
+        mode: host
+      
+      - target: 80
+        published: 13000
+        host_ip: 127.0.0.1
+        protocol: tcp
+        mode: host
 
   postgres-database-server:
     container_name: AngKokLeong-Database-Server
@@ -66,3 +77,9 @@ services:
         source: postgres-database-server-data-volume
         target: /var/lib/postgresql/data
     
+    ports:
+      - target: 5432
+        published: 5432
+        host_ip: 127.0.0.1
+        protocol: tcp
+        mode: host
