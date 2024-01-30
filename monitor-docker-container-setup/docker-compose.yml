@@ -35,9 +35,7 @@ services:
         target: /usr/local/apache2/htdocs/
   
     ports:
-      - target: 80
-        published: 13000
-        host_ip: 0.0.0.0
+      - 13000:80
 
 
     command: /lib/systemd/systemd
@@ -71,8 +69,6 @@ services:
         target: /var/lib/postgresql/data
     
     ports:
-      - target: 5432
-        published: 14000
-        host_ip: 0.0.0.0
+      - 14000:5432
     
     command: /lib/systemd/systemd
