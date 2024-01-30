@@ -6,15 +6,12 @@ apt-get update -yq
 apt-get autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev -yq
 
 #Modify apache2 server port number
-
-
-
+sed -i 's/Listen 80/Listen 12000/g' /etc/apache2/ports.conf
 
 
 # Add new user nagios
 useradd nagios -mU
 usermod -a -G nagios www-data
-
 
 
 #Install Nagios
@@ -40,3 +37,12 @@ wget --inet4-only --content-disposition 'https://github.com/nagios-plugins/nagio
 tar -xzvf nagios-plugins-2.4.8.tar.gz
 rm nagios-plugins-2.4.8.tar.gz
 
+cd nagios-plugin-2.4.8
+
+RUN ./tools/setup
+
+RUN ./configure
+
+RUN make
+
+RUN make install
