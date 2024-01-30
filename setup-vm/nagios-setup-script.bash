@@ -39,10 +39,10 @@ rm nagios-plugins-2.4.8.tar.gz
 
 cd /home/dockeradm/Desktop/nagios-plugins-2.4.8
 
-RUN ./tools/setup
+./tools/setup
 
-RUN ./configure
+./configure
 
-RUN make
+make
 
-RUN make install
+make install
