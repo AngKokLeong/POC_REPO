@@ -17,6 +17,7 @@ RUN apt-get install systemd nano curl wget openssl libssl-dev iputils-ping opens
 
 FROM apache-server-build-stage AS prepare-file-stage
 
+WORKDIR /
 
 COPY sshd_config /etc/ssh/sshd_config.d
 
@@ -44,6 +45,6 @@ RUN make
 
 RUN make install
 
-WORKDIR /
+
 
 CMD ["apachectl", "-D", "FOREGROUND"]
