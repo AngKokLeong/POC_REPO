@@ -15,16 +15,7 @@ echo "Asia/Singapore" > /etc/timezone
 RUN apt-get install systemd nano curl wget openssl libssl-dev iputils-ping openssh-server gcc libc6 libgd-dev  make autoconf -yq
 
 
-FROM apache-server-build-stage AS prepare-file-stage
-
-WORKDIR /
-
-COPY sshd_config /etc/ssh/sshd_config.d
-
-RUN useradd nagios -m -U 
-
-# https://stackoverflow.com/questions/2150882/how-to-automatically-add-user-account-and-password-with-a-bash-script
-RUN echo nagios:password | chpasswd
+FROM apache-server-build-stage AS nagios-plugin-installation-stage
 
 
 
@@ -44,6 +35,19 @@ RUN ./configure
 RUN make
 
 RUN make install
+
+
+
+FROM nagios-plugin-installation-stage AS setup-container-stage
+
+WORKDIR /
+
+COPY sshd_config /etc/ssh/sshd_config.d
+
+RUN useradd nagios -m -U 
+
+# https://stackoverflow.com/questions/2150882/how-to-automatically-add-user-account-and-password-with-a-bash-script
+RUN echo nagios:password | chpasswd
 
 
 
