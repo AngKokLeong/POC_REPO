@@ -37,7 +37,7 @@ wget --inet4-only --content-disposition 'https://github.com/nagios-plugins/nagio
 tar -xzvf nagios-plugins-2.4.8.tar.gz
 rm nagios-plugins-2.4.8.tar.gz
 
-cd nagios-plugins-2.4.8
+cd /home/dockeradm/Desktop/nagios-plugins-2.4.8
 
 RUN ./tools/setup
 
