@@ -35,17 +35,10 @@ services:
         target: /usr/local/apache2/htdocs/
   
     ports:
-      - target: 22
-        published: 11000
-        host_ip: 127.0.0.1
-        protocol: tcp
-        mode: host
-      
       - target: 80
         published: 13000
-        host_ip: 127.0.0.1
         protocol: tcp
-        mode: host
+
 
     command: /lib/systemd/systemd
 
@@ -80,14 +73,6 @@ services:
     ports:
       - target: 5432
         published: 14000
-        host_ip: 127.0.0.1
         protocol: tcp
-        mode: host
-
-      - target: 22
-        published: 11001
-        host_ip: 127.0.0.1
-        protocol: tcp
-        mode: host
     
     command: /lib/systemd/systemd
