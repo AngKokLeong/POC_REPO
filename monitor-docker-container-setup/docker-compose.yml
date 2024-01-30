@@ -79,7 +79,7 @@ services:
     
     ports:
       - target: 5432
-        published: 5432
+        published: 14000
         host_ip: 127.0.0.1
         protocol: tcp
         mode: host
