@@ -35,7 +35,10 @@ services:
         target: /usr/local/apache2/htdocs/
   
     ports:
-      - 80:80
+      - target: 80
+        host_ip: 192.168.200.51
+        protocol: tcp
+        published: 80
 
 
   postgres-database-server:
