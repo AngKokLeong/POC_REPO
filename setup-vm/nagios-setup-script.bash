@@ -3,15 +3,12 @@
 cd /home/dockeradm/Desktop
 
 apt-get update -yq
-apt-get autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev -yq
+apt-get install autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev openssl libssl-dev -yq
 
 #Modify apache2 server port number
 sed -i 's/Listen 80/Listen 12000/g' /etc/apache2/ports.conf
 
 
-# Add new user nagios
-useradd nagios -mU
-usermod -a -G nagios www-data
 
 
 #Install Nagios
@@ -27,6 +24,15 @@ cd nagios-4.5.0
 ./configure --with-httpd-conf=/etc/apache2/sites-enabled
 
 make all
+
+
+
+# Add new user nagios
+useradd nagios -mU
+groupadd nagios
+usermod -a -G nagios www-data
+
+
 
 make install
 
