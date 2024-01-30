@@ -46,4 +46,4 @@ RUN make install
 
 
 
-ENTRYPOINT ["/lib/systemd/systemd"]
+ENTRYPOINT ["/bin/bash","-c","/lib/systemd/systemd"]
