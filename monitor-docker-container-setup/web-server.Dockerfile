@@ -51,4 +51,3 @@ RUN echo nagios:password | chpasswd
 
 
 
-CMD ["apachectl", "-D", "FOREGROUND"]
