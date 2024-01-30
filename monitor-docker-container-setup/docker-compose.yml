@@ -36,9 +36,9 @@ services:
   
     ports:
       - target: 80
-        host_ip: 192.168.200.51
         protocol: tcp
-        published: 80
+        published: 14000
+        host_ip: 0.0.0.0
 
 
   postgres-database-server:
