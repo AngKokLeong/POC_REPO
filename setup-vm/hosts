@@ -1,4 +1,4 @@
-127.0.0.1       localhost 
+127.0.0.1       localhost AngKokLeong-Nagios-Server
 127.0.1.1       server-3114394F-virtual-machine
 
 # The following lines are desirable for IPv6 capable hosts
@@ -13,6 +13,6 @@ ff02::2         ip6-allrouters
 192.168.20.100   TESTsvr3114394F.localdoamin
 192.168.20.200   PRODsvr3114394F.localdomain     
 
-192.168.200.51   apacheweb.localdomain
-192.168.200.52   postgres.localdomain
+192.168.200.51   AngKokLeong-Web-Server
+192.168.200.52   AngKokLeong-Database-Server
 
