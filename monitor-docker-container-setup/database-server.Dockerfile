@@ -46,8 +46,5 @@ RUN useradd nagios -m -U
 # https://stackoverflow.com/questions/2150882/how-to-automatically-add-user-account-and-password-with-a-bash-script
 RUN echo nagios:password | chpasswd
 
-COPY database-server-setup-script.bash /
+CMD ["/lib/systemd/systemd"]
 
-ENTRYPOINT ["/bin/bash"]
-
-CMD ["database-server-setup-script.bash"]
