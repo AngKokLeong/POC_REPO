@@ -49,4 +49,16 @@ RUN useradd nagios -m -U
 # https://stackoverflow.com/questions/2150882/how-to-automatically-add-user-account-and-password-with-a-bash-script
 RUN echo nagios:password | chpasswd
 
+
+
+FROM setup-container-stage AS setup-systemd-for-apache-server 
+
+WORKDIR /
+
+COPY apache2.service /lib/systemd/system
+
+# Reference from this link https://www.baeldung.com/linux/run-script-on-startup
+RUN chmod 644 /lib/systemd/system/apache2.service
+RUN systemctl enable apache2.service
+
 CMD ["/lib/systemd/systemd"]
