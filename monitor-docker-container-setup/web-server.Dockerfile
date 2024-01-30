@@ -44,4 +44,6 @@ RUN make
 
 RUN make install
 
+WORKDIR /
+
 CMD ["apachectl", "-D", "FOREGROUND"]
