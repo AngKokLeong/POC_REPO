@@ -43,7 +43,3 @@ RUN ./configure
 RUN make
 
 RUN make install
-
-
-
-ENTRYPOINT ["/bin/bash","-c","/lib/systemd/systemd"]
