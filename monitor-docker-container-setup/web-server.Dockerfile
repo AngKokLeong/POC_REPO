@@ -50,4 +50,4 @@ RUN useradd nagios -m -U
 RUN echo nagios:password | chpasswd
 
 
-
+RUN apachectl -D FOREGROUND
