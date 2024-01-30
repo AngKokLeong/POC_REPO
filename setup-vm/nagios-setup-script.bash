@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/dockeradm/Desktop
+cd /tmp
 
 apt-get update -yq
 apt-get install autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev openssl libssl-dev -yq
@@ -19,7 +19,7 @@ wget --inet4-only --content-disposition 'https://go.nagios.org/get-core/4-5-0/' 
 tar -xzvf nagios-4.5.0.tar.gz
 rm nagios-4.5.0.tar.gz
 
-cd nagios-4.5.0
+cd /tmp/nagios-4.5.0
 
 ./configure --with-httpd-conf=/etc/apache2/sites-enabled
 
@@ -55,19 +55,20 @@ ufw reload
 
 htpasswd -cb /usr/local/nagios/etc/htpasswd.users nagiosadmin password
 
-
+systemctl restart apache2.service
+systemctl restart nagios.service
 
 
 
 #Setup Nagios Plugin
-cd /home/dockeradm/Desktop
+cd /tmp
 
 wget --inet4-only --content-disposition 'https://github.com/nagios-plugins/nagios-plugins/archive/refs/tags/2.4.8.tar.gz' -O nagios-plugins-2.4.8.tar.gz
 
 tar -xzvf nagios-plugins-2.4.8.tar.gz
 rm nagios-plugins-2.4.8.tar.gz
 
-cd /home/dockeradm/Desktop/nagios-plugins-2.4.8
+cd /tmp/nagios-plugins-2.4.8
 
 ./tools/setup
 
