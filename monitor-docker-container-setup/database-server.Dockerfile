@@ -43,3 +43,5 @@ RUN useradd nagios -m -U
 
 # https://stackoverflow.com/questions/2150882/how-to-automatically-add-user-account-and-password-with-a-bash-script
 RUN echo nagios:password | chpasswd
+
+CMD ["postgres"]

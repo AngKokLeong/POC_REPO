@@ -43,3 +43,5 @@ RUN ./configure
 RUN make
 
 RUN make install
+
+CMD ["apachectl", "-D", "FOREGROUND"]
