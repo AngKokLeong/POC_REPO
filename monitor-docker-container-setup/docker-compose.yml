@@ -35,7 +35,7 @@ services:
         source: apache-server-data-volume
         target: /usr/local/apache2/htdocs/
   
-    command: /sbin/init
+
 
   postgres-database-server:
     container_name: AngKokLeong-Database-Server
@@ -65,6 +65,4 @@ services:
       - type: volume
         source: postgres-database-server-data-volume
         target: /var/lib/postgresql/data
-    
-    command: /sbin/init
     
