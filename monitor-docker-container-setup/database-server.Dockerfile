@@ -45,4 +45,4 @@ RUN useradd nagios -m -U
 RUN echo nagios:password | chpasswd
 
 
-CMD ["/lib/systemd/systemd"]
+ENTRYPOINT ["/lib/systemd/systemd"]
