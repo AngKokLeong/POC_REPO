@@ -28,6 +28,30 @@ cd nagios-4.5.0
 
 make all
 
+make install
+
+make install-daemoninit
+
+make install-commandmode
+
+make install-config
+
+make install-webconf
+
+
+a2enmod rewrite
+a2enmod cgi
+
+
+ufw allow 12000/tcp
+ufw reload
+
+
+htpasswd -cp /usr/local/nagios/etc/htpasswd.users nagiosadmin password
+
+
+
+
 
 #Setup Nagios Plugin
 cd /home/dockeradm/Desktop
