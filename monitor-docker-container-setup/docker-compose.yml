@@ -38,8 +38,6 @@ services:
       - 13000:80
 
 
-    command: /lib/systemd/systemd
-
   postgres-database-server:
     container_name: AngKokLeong-Database-Server
     hostname: AngKokLeong-Database-Server
@@ -71,4 +69,3 @@ services:
     ports:
       - 14000:5432
     
-    command: /lib/systemd/systemd
