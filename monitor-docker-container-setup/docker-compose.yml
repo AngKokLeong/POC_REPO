@@ -27,6 +27,9 @@ services:
       monitor-network:
         ipv4_address: 192.168.200.51
 
+    extra_hosts:
+      "server-3114394F AngKokLeong-Nagios-Server": "172.20.113.62"
+
     volume:
       - type: volume
         source: apache-server-data-volume
@@ -52,6 +55,9 @@ services:
     networks:
       monitor-network:
         ipv4_address: 192.168.200.52
+
+    extra_hosts:
+      "server-3114394F AngKokLeong-Nagios-Server": "172.20.113.62"
 
     volume:
       - type: volume
