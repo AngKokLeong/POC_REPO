@@ -16,7 +16,6 @@ services:
     container_name: AngKokLeong-Web-Server
     hostname: AngKokLeong-Web-Server
     
-    init: true
     privileged: true
 
     build:
@@ -48,11 +47,12 @@ services:
         protocol: tcp
         mode: host
 
+    command: /lib/systemd/systemd
+
   postgres-database-server:
     container_name: AngKokLeong-Database-Server
     hostname: AngKokLeong-Database-Server
 
-    init: true
     privileged: true
 
     environment:
@@ -83,3 +83,11 @@ services:
         host_ip: 127.0.0.1
         protocol: tcp
         mode: host
+
+      - target: 22
+        published: 11001
+        host_ip: 127.0.0.1
+        protocol: tcp
+        mode: host
+    
+    command: /lib/systemd/systemd
