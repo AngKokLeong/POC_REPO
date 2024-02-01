@@ -14,7 +14,7 @@ RUN wget --inet4-only --content-disposition 'https://apt.puppet.com/pool/bionic/
 RUN dpkg --install puppet-agent_8.3.1-1bionic_amd64.deb
 
 # need to install openssh-server and sudo and net-tools to allow bolt command to work
-RUN apt-get -yq install nano vim iproute2 puppet-agent iputils-ping systemd curl iputils-ping net-tools openssh-server sudo apache2
+RUN apt-get -yq install nano vim iproute2 puppet-agent iputils-ping systemd curl iputils-ping net-tools openssh-server sudo apache2 git
 
 RUN cat test_server_configuration.txt > /etc/puppetlabs/puppet/puppet.conf
 RUN cat extend_path_variable_puppet_command.txt >> ~/.bashrc
@@ -24,6 +24,8 @@ RUN rm test_server_configuration.txt extend_path_variable_puppet_command.txt pup
 
 RUN useradd testsvradm -m -U
 RUN echo testsvradm:password | chpasswd
+RUN usermod -G sudo testsvradm
+
 
 
 CMD ["/lib/systemd/systemd"]
