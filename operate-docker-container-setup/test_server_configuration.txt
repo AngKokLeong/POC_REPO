@@ -1,3 +1,3 @@
 [main]
-certname = TESTsvr3114394F.localdomain
+certname = testsvr3114394f.localdomain
 server = server-3114394F.localdomain
