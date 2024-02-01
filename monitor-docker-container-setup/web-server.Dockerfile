@@ -12,7 +12,7 @@ RUN ls /usr/share/zoneinfo && \
 cp /usr/share/zoneinfo/Singapore /etc/localtime && \
 echo "Asia/Singapore" > /etc/timezone 
 
-RUN apt-get install systemd nano curl wget openssl libssl-dev iputils-ping openssh-server gcc libc6 libgd-dev  make autoconf -yq
+RUN apt-get install systemd nano curl wget openssl libssl-dev iputils-ping openssh-server gcc libc6 libgd-dev  make autoconf iproute2 net-tools -yq
 
 
 FROM apache-server-build-stage AS nagios-plugin-installation-stage
