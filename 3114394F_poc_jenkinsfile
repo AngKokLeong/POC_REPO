@@ -1,9 +1,15 @@
+def USER_SELECTION = ''
+def static PROCEED_PRODUCTION = 'Proceed Production'
+def static ROLLBACK_TEST = 'RollBack Test'
+
 pipeline {
     agent any
 
-    def USER_SELECTION = ''
-    def static PROCEED_PRODUCTION = 'Proceed Production'
-    def static ROLLBACK_TEST = 'RollBack Test'
+
+
+    triggers {
+        pollSCM('*/5 * * * *')
+    }
 
     stages {
 
