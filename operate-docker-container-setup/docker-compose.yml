@@ -21,7 +21,7 @@ services:
         target: /
     
     extra_hosts:
-      - "server-3114394F":"172.20.113.62"
+      - "server-3114394F:172.20.113.62"
 
   production-server:
     
@@ -43,7 +43,7 @@ services:
         target: /
 
     extra_hosts:
-      - "server-3114394F":"172.20.113.62"
+      - "server-3114394F:172.20.113.62"
 
 networks:
   operate-network:
