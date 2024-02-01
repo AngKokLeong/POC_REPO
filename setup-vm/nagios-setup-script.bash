@@ -3,7 +3,7 @@
 cd /tmp
 
 apt-get update -yq
-apt-get install autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev openssl libssl-dev openssh-server -yq
+apt-get install autoconf gcc libc6 make wget unzip apache2 php libapache2-mod-php7.2 libgd-dev openssl libssl-dev openssh-client -yq
 
 #Modify apache2 server port number
 #https://opensource.com/article/22/8/automate-file-edits-sed-linux 
