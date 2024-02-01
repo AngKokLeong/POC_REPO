@@ -18,7 +18,7 @@ services:
     volumes:
       - type: volume
         source: test-server-data
-        target: /
+        target: /data/test-server
     
     extra_hosts:
       - "server-3114394F:172.20.113.62"
@@ -41,7 +41,7 @@ services:
     volumes:
       - type: volume
         source: production-server-data
-        target: /
+        target: /data/production-server
 
     extra_hosts:
       - "server-3114394F:172.20.113.62"
