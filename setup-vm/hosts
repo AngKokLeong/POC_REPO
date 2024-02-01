@@ -10,7 +10,7 @@ ff02::2         ip6-allrouters
 
 
 172.20.113.62    server-3114394F.localdomain server-3114394F AngKokLeong-Nagios-Server
-192.168.20.100   TESTsvr3114394F.localdoamin
+192.168.20.100   TESTsvr3114394F.localdomain
 192.168.20.200   PRODsvr3114394F.localdomain     
 
 192.168.200.51   AngKokLeong-Web-Server
