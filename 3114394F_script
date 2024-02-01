@@ -11,4 +11,4 @@ git clone https://github.com/AngKokLeong/POC_REPO.git /tmp/3114394F/work
 
 
 # Copy new index.html to replace /var/www/html/index.html
-cp /tmp/3114394F/work/index.html /var/www/html/index.html
+cp /tmp/3114394F/work/3114394F_index.html /var/www/html/index.html
