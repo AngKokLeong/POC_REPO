@@ -21,4 +21,9 @@ RUN cat extend_path_variable_puppet_command.txt >> ~/.bashrc
 
 RUN rm test_server_configuration.txt extend_path_variable_puppet_command.txt puppet-agent_8.3.1-1bionic_amd64.deb
 
+
+RUN useradd testsvradm -m -U
+RUN echo testsvradm:password | chpasswd
+
+
 CMD ["/lib/systemd/systemd"]
