@@ -1,0 +1,3 @@
+[main]
+certname = PRODsvr3114394F.localdomain
+server = server-3114394F.localdomain
