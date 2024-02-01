@@ -32,7 +32,7 @@ pipeline {
                 echo "ST4 3114394F: TEST server's testing result has been inspected"
                 
                 script {
-                    env.user_selection = input( 
+                    user_selection = input( 
                                             message: "Proceed Production or RollBack?", 
                                             parameters: [
                                                 choice(
@@ -41,6 +41,8 @@ pipeline {
                                                 )
                                             ]
                                         )
+
+                    echo user_selection
                 } 
 
             }
@@ -51,7 +53,7 @@ pipeline {
                 
                 script {
 
-                    if (env.user_selection == env.PROCEED_PRODUCTION) {
+                    if (user_selection == env.PROCEED_PRODUCTION) {
                         //bolt script 
 
 
