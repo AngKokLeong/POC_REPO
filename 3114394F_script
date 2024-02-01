@@ -1,11 +1,14 @@
 # puppet command to ensure apache2 service is installed and running
-
+puppet resource package apache2 ensure=installed
+puppet resource service apache2 ensure=running
 
 # puppet command to remove directory /tmp/3114394F/work and recreate directory /tmp/3114394F/work
-
+puppet resource file /tmp/3114394F/work ensure=absent recurse=true force=true
+puppet resource file /tmp/3114394F/work ensure=directory
 
 # Clone github repository POC_Repo to container's /tmp/3114394F/work folder
+git clone https://github.com/AngKokLeong/POC_REPO.git /tmp/3114394F/work
 
 
-
-
+# Copy new index.html to replace /var/www/html/index.html
+cp /tmp/3114394F/work/index.html /var/www/html/index.html
