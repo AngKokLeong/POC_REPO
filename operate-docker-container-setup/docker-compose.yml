@@ -8,7 +8,7 @@ services:
     privileged: true
 
     build:
-      context: 
+      context: .
       dockerfile: TESTsvr3114394F.Dockerfile
 
     networks:
@@ -23,6 +23,7 @@ services:
     extra_hosts:
       - "server-3114394F:172.20.113.62"
 
+
   production-server:
     
     container_name: PRODsvr3114394F
@@ -30,7 +31,7 @@ services:
     privileged: true
 
     build:
-      context:
+      context: .
       dockerfile: PRODsvr3114394F.Dockerfile
     
     networks:
