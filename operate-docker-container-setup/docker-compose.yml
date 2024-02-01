@@ -1,0 +1,58 @@
+version: '3.9'
+
+services:
+
+  test-server:
+    container_name: TESTsvr3114394F
+    hostname: TESTsvr3114394F.localdomain
+    privileged: true
+
+    build:
+      context: 
+      dockerfile: TESTsvr3114394F.Dockerfile
+
+    networks:
+      operate-network:
+        ipv4_address: 192.168.20.100
+    
+    volumes:
+      - type: volume
+        source: test-server-data
+        target: /
+    
+    extra_hosts:
+      - "server-3114394F": "172.20.113.62"
+
+  production-server:
+    
+    container_name: PRODsvr3114394F
+    hostname: PRODsvr3114394F.localdomain
+    privileged: true
+
+    build:
+      context:
+      dockerfile: PRODsvr3114394F.Dockerfile
+    
+    networks:
+      operate-network:
+        ipv4_address: 192.168.20.200
+
+    volumes:
+      - type: volume
+        source: production-server-data
+        target: /
+
+    extra_hosts:
+      - "server-3114394F": "172.20.113.62"
+
+networks:
+  operate-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 192.168.20.0/24
+          
+
+volumes:
+  test-server-data:
+  production-server-data:
