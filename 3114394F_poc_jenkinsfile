@@ -4,6 +4,10 @@ def static ROLLBACK_TEST = 'RollBack Test'
 def static HTTP_OK_STATUS = 'HTTP/1.1 200 OK'
 def CURRENT_HTTP_STATUS = ''
 
+def static JENKINS_CURRENT_BUILD_ABORTED = 'ABORTED'
+def static JENKINS_CURRENT_BUILD_SUCCESS = 'SUCCESS'
+def static JENKINS_CURRENT_BUILD_FAILURE = 'FAILURE'
+
 pipeline {
     agent any
 
@@ -39,19 +43,34 @@ pipeline {
                 // Execute curl command to determine the TEST html outcome 
                 sh 'curl -is http://TESTsvr3114394F.localdomain | head -n 1 > /tmp/TEST-result-file'
 
-                // cat the status code in the html
+                
                 script {
-                    CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
-                    // verify the status from cat command tallies with HTTP_OK_STATUS     
-                    echo CURRENT_HTTP_STATUS
-                    //if it tallies then continue
+                    //https://copyprogramming.com/howto/jenkins-error-handling-using-try-catch-to-post-to-log-after-build-is-complete-and-checked-for-errors#how-to-throw-exception-in-jenkins-pipeline
 
-                    //else print the message and explain the Web test fails and then perform rollback test directly
+                    // https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#deploy (currentBuild.status)
+
+                    catchError (buildResult: JENKINS_CURRENT_BUILD_SUCCESS, stageResult: JENKINS_CURRENT_BUILD_FAILURE, message: '') {
+                        // set the web test result from the cat command after the curl command
+                        
+                        // https://stackoverflow.com/questions/36547680/how-do-i-get-the-output-of-a-shell-command-executed-using-into-a-variable-from-j
+                        // https://www.jenkins.io/doc/pipeline/steps/workflow-durable-task-step/#sh-shell-script
+                        CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
+
+                        // verify the status from cat command tallies with HTTP_OK_STATUS     
+                        if (CURRENT_HTTP_STATUS == HTTP_OK_STATUS) {
+                            echo 'ST3 3114394F: Test result for TEST server is generated: TEST-result-file'
+                        }else {
+                            //else print the message and explain the Web test fails and then perform rollback test directly
+                            error ('')
+                        }
+                    }
 
                 }
-                
-                
-                echo 'ST3 3114394F: Test result for TEST server is generated: TEST-result-file'
+            }
+
+            post {
+
+
             }
         }
 
