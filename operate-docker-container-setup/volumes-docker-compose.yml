@@ -1,5 +1,0 @@
-volumes:
-  test-server-data:
-    name: test-server-data-volume
-  production-server-data:
-    name: production-server-data-volume
