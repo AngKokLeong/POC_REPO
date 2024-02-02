@@ -1,3 +1,0 @@
-[main]
-certname = prodsvr3114394f.localdomain
-server = server-3114394F.localdomain
