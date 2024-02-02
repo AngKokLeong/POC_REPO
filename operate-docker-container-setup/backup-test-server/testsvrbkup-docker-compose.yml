@@ -38,4 +38,6 @@ networks:
 volumes:
   test-server-data:
     name: test-server-data-volume
+    #to use existing volume if it has been created
+    external: true
 
