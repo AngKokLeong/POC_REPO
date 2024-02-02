@@ -1,6 +1,8 @@
 def USER_SELECTION = ''
 def static PROCEED_PRODUCTION = 'Proceed Production'
 def static ROLLBACK_TEST = 'RollBack Test'
+def static HTTP_OK_STATUS = 'HTTP/1.1 200 OK'
+def CURRENT_HTTP_STATUS = ''
 
 pipeline {
     agent any
@@ -38,13 +40,22 @@ pipeline {
                 sh 'curl -is http://TESTsvr3114394F.localdomain | head -n 1 > /tmp/TEST-result-file'
 
                 // cat the status code in the html
-                sh 'cat /tmp/TEST-result-file'
+                script {
+                    CURRENT_HTTP_STATUS = sh 'cat /tmp/TEST-result-file'
+                    // verify the status from cat command tallies with HTTP_OK_STATUS     
+                    echo CURRENT_HTTP_STATUS
+                    //if it tallies then continue
+
+                    //else print the message and explain the Web test fails and then perform rollback test directly
+
+                }
+                
                 
                 echo 'ST3 3114394F: Test result for TEST server is generated: TEST-result-file'
             }
         }
 
-        stage('ST4 3114394F') {
+      /*  stage('ST4 3114394F') {
             steps {
                 echo "ST4 3114394F: TEST server's testing result has been inspected"
                 
@@ -59,7 +70,6 @@ pipeline {
                                             ]
                                         )
                 } 
-
             }
         }
 
@@ -103,5 +113,5 @@ pipeline {
             }
         }
 
-    }
+    }*/
 }
