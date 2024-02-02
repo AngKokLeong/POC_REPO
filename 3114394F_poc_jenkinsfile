@@ -73,13 +73,14 @@ pipeline {
                         
                     }else if (USER_SELECTION == ROLLBACK_TEST) {
 
-                        //stop the TESTsvr3114394F container 
+                        //stop the TESTsvr3114394F container
+                        sh 'docker container stop TESTsvr3114394F'
+
                         //remove the container TESTsvr3114394F
+                        sh 'docker container remove TESTsvr3114394F'
 
                         //create new container for TESTsvr3114394F using the docker image 
-
-                        //docker container run --detach --name TESTsvr3114394F bkup-test-image /bin/bash
-                        //docker container run --add-host= --name=TESTsvr3114394F --network=operate-network --ip=192.168.20.100
+                        sh 'docker compose --file operate-docker-container-setup/backup-test-server up -d'
                     }
 
                 }
