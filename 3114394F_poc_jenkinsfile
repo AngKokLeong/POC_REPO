@@ -5,8 +5,6 @@ def static ROLLBACK_TEST = 'RollBack Test'
 pipeline {
     agent any
 
-
-
     triggers {
         pollSCM('*/5 * * * *')
     }
@@ -21,12 +19,27 @@ pipeline {
 
         stage('ST2 3114394F') {
             steps {
+                
+                //remove any backup of old image [BKUP-TEST-image]
+                sh 'docker image rm bkup-test-image -f'
+                //create new backup image for TEST Server [BKUP-TEST-image]
+                sh 'docker commit TESTsvr3114394F bkup-test-image'
+
+                sh 'bolt script run 3114394F_script --targets TESTsvr3114394F.localdomain --user testsvradm --password password --no-host-key-check --run-as root'
+
                 echo 'ST2 3114394F: TEST server is backup and updated'
             }
         }
 
         stage('ST3 3114394F') {
             steps {
+
+                // Execute curl command to determine the TEST html outcome 
+                sh 'curl -is http://TESTsvr3114394F.localdomain | head -n 1 > /tmp/TEST-result-file'
+
+                // cat the status code in the html
+                sh 'cat /tmp/TEST-result-file'
+                
                 echo 'ST3 3114394F: Test result for TEST server is generated: TEST-result-file'
             }
         }
@@ -54,32 +67,33 @@ pipeline {
             steps {
                 
                 script {
-
                     if (USER_SELECTION == PROCEED_PRODUCTION) {
                         //bolt script 
-
-
+                        sh 'bolt script run 3114394F_script --targets PRODsvr3114394F.localdomain --user prodsvradm --password password --no-host-key-check --run-as root'
+                        
                     }else if (USER_SELECTION == ROLLBACK_TEST) {
-                        //docker run -it BKUP-TEST 
 
+                        //stop the TESTsvr3114394F container 
+                        //remove the container TESTsvr3114394F
+
+                        //create new container for TESTsvr3114394F using the docker image 
+
+                        //docker container run --detach --name TESTsvr3114394F bkup-test-image /bin/bash
+                        //docker container run --add-host= --name=TESTsvr3114394F --network=operate-network --ip=192.168.20.100
                     }
 
-
                 }
-                
             }
         }
 
         stage ('ST6 3114394F') {
             steps {
                 script {
-
                     if (USER_SELECTION == PROCEED_PRODUCTION){
                         echo "ST6 3114394F: Production server is updated"
                     }else if (USER_SELECTION == ROLLBACK_TEST) {
                         echo "ST6 3114394F: TEST server is rollback"
                     }
-
                 }
             }
         }
