@@ -80,7 +80,7 @@ pipeline {
                         sh 'docker container remove TESTsvr3114394F'
 
                         //create new container for TESTsvr3114394F using the docker image 
-                        sh 'docker compose --file operate-docker-container-setup/backup-test-server up -d'
+                        sh 'docker compose --file operate-docker-container-setup/backup-test-server/testsvrbkup-docker-compose.yml up -d'
                     }
 
                 }
