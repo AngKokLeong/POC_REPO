@@ -106,6 +106,12 @@ pipeline {
         }
 
         stage ('ST5 3114394F') {
+            when {
+                anyOf {
+                    equals expected: ROLLBACK_TEST, actual: USER_SELECTION;
+                    equals expected: PROCEED_PRODUCTION, actual: USER_SELECTION;
+                }
+            }
             steps {
                 
                 script {
@@ -120,8 +126,7 @@ pipeline {
 
                         //remove the container TESTsvr3114394F
                         sh 'docker container remove TESTsvr3114394F'
-
-                    
+                        
                         //create new container for TESTsvr3114394F using the docker image 
                         sh 'docker compose --file operate-docker-container-setup/backup-test-server/testsvrbkup-docker-compose.yml up -d'
 
