@@ -9,8 +9,10 @@ networks:
 
 volumes:
   apache-server-data-volume:
+    name: apache-server-data-volume
   postgres-database-server-data-volume:
-
+    name: postgres-database-server-data-volume
+    
 services:
   apache-server:
     container_name: AngKokLeong-Web-Server
@@ -68,7 +70,8 @@ services:
       - type: volume
         source: postgres-database-server-data-volume
         target: /var/lib/postgresql/data
-    
+    # find ways to set a limit to the docker volume to create the orange color notification of disk space at warning level < 50%
+    # https://docs.docker.com/compose/compose-file/05-services/#storage_opt
     ports:
       - 14000:5432
     
