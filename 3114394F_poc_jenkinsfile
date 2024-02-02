@@ -41,7 +41,7 @@ pipeline {
 
                 // cat the status code in the html
                 script {
-                    CURRENT_HTTP_STATUS = sh 'cat /tmp/TEST-result-file' true
+                    CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
                     // verify the status from cat command tallies with HTTP_OK_STATUS     
                     echo CURRENT_HTTP_STATUS
                     //if it tallies then continue
