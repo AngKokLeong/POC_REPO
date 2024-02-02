@@ -75,20 +75,32 @@ pipeline {
             }
         }
 
-      /*  stage('ST4 3114394F') {
+        /* stage('ST4 3114394F') {
+            when {
+                anyOf {
+                    equals expected: WEB_TEST_RESULT_PASS, actual: WEB_TEST_RESULT;
+                    equals expected: WEB_TEST_RESULT_FAIL, actual: WEB_TEST_RESULT;
+                }
+            }
             steps {
-                echo "ST4 3114394F: TEST server's testing result has been inspected"
-                
+
                 script {
-                    USER_SELECTION = input( 
-                                            message: "Proceed Production or RollBack?", 
-                                            parameters: [
-                                                choice(
-                                                    name: 'user_choice', 
-                                                    choices: [PROCEED_PRODUCTION, ROLLBACK_TEST]
-                                                )
-                                            ]
-                                        )
+                    if (WEB_TEST_RESULT == WEB_TEST_RESULT_PASS) {
+                        echo "ST4 3114394F: TEST server's testing result has been inspected"
+
+                        USER_SELECTION = input( 
+                                                message: "Proceed Production or RollBack?", 
+                                                parameters: [
+                                                    choice(
+                                                        name: 'user_choice', 
+                                                        choices: [PROCEED_PRODUCTION, ROLLBACK_TEST]
+                                                    )
+                                                ]
+                                            )
+                    }else if (WEB_TEST_RESULT == WEB_TEST_RESULT_FAIL) {
+                        echo "ST4 3114394F: Selecting 'Rollback Test' since Web Test Result FAILED"
+                        USER_SELECTION = ROLLBACK_TEST
+                    }
                 } 
             }
         }
