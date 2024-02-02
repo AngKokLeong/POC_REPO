@@ -79,8 +79,12 @@ pipeline {
                         //remove the container TESTsvr3114394F
                         sh 'docker container remove TESTsvr3114394F'
 
+                    
                         //create new container for TESTsvr3114394F using the docker image 
                         sh 'docker compose --file operate-docker-container-setup/backup-test-server/testsvrbkup-docker-compose.yml up -d'
+
+                        //clean up docker image previously attached to TESTsvr3114394F 
+                        sh 'docker image prune --all --force'
                     }
 
                 }
