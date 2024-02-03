@@ -140,7 +140,7 @@ pipeline {
             }
         }
 
-       /* stage ('ST6 3114394F') {
+        stage ('ST6 3114394F') {
             steps {
                 script {
                     if (USER_SELECTION == PROCEED_PRODUCTION){
@@ -150,7 +150,7 @@ pipeline {
                     }
                 }
             }
-        }*/
+        }
 
     }
 }
