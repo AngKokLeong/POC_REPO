@@ -24,56 +24,48 @@ pipeline {
 
         stage('ST1 3114394F') {
             steps {
+
                 echo 'ST1 3114394F: Environment is prepared. Start to rollout to TEST server'
+
             }
         }
 
         stage('ST2 3114394F') {
             steps {
-                
-                //remove any backup of old image [BKUP-TEST-image]
+            
                 sh 'docker image rm bkup-test-image -f'
-                //create new backup image for TEST Server [BKUP-TEST-image]
+
                 sh 'docker commit TESTsvr3114394F bkup-test-image'
 
                 sh 'bolt script run 3114394F_script --targets TESTsvr3114394F.localdomain --user testsvradm --password password --no-host-key-check --run-as root'
 
                 echo 'ST2 3114394F: TEST server is backup and updated'
+
             }
         }
 
         stage('ST3 3114394F') {
             steps {
 
-                // Execute curl command to determine the TEST html outcome 
                 sh 'curl -is http://TESTsvr3114394F.localdomain | head -n 1 > /tmp/TEST-result-file'
+
                 echo 'ST3 3114394F: Test result for TEST server is generated: TEST-result-file'
                 
                 script {
-                    //https://copyprogramming.com/howto/jenkins-error-handling-using-try-catch-to-post-to-log-after-build-is-complete-and-checked-for-errors#how-to-throw-exception-in-jenkins-pipeline
-
-                    // https://www.jenkins.io/doc/book/pipeline/jenkinsfile/#deploy (currentBuild.status)
-
-                    
-                    // set the web test result from the cat command after the curl command
-                        
-                        // https://stackoverflow.com/questions/36547680/how-do-i-get-the-output-of-a-shell-command-executed-using-into-a-variable-from-j
-                        // https://www.jenkins.io/doc/pipeline/steps/workflow-durable-task-step/#sh-shell-script
 
                     CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
 
                     //CURRENT_HTTP_STATUS = 'asd'
-
-                    // verify the status from cat command tallies with HTTP_OK_STATUS     
+  
                     if (CURRENT_HTTP_STATUS == HTTP_OK_STATUS) {
                         WEB_TEST_RESULT = WEB_TEST_RESULT_PASS
                         echo 'ST3 3114394F: Test result for TEST server PASSED'
                     }else {
-                            //else print the message and explain the Web test fails and then perform rollback test directly
                         WEB_TEST_RESULT = WEB_TEST_RESULT_FAIL
                         echo 'ST3 3114394F: Test result for TEST server FAILED'
                     }
                 }
+
             }
         }
 
@@ -87,7 +79,9 @@ pipeline {
             steps {
 
                 script {
+
                     if (WEB_TEST_RESULT == WEB_TEST_RESULT_PASS) {
+
                         echo "ST4 3114394F: TEST server's testing result has been inspected"
 
                         USER_SELECTION = input( 
@@ -99,11 +93,15 @@ pipeline {
                                                     )
                                                 ]
                                             )
+
                     }else if (WEB_TEST_RESULT == WEB_TEST_RESULT_FAIL) {
+
                         echo "ST4 3114394F: Selecting 'Rollback Test' since Web Test Result FAILED"
                         USER_SELECTION = ROLLBACK_TEST
+
                     }
                 } 
+
             }
         }
 
@@ -117,38 +115,43 @@ pipeline {
             steps {
                 
                 script {
+
                     if (USER_SELECTION == PROCEED_PRODUCTION) {
-                        //bolt script 
+
                         sh 'bolt script run 3114394F_script --targets PRODsvr3114394F.localdomain --user prodsvradm --password password --no-host-key-check --run-as root'
                         
                     }else if (USER_SELECTION == ROLLBACK_TEST) {
 
-                        //stop the TESTsvr3114394F container
                         sh 'docker container stop TESTsvr3114394F'
 
-                        //remove the container TESTsvr3114394F
                         sh 'docker container remove TESTsvr3114394F'
                         
-                        //create new container for TESTsvr3114394F using the docker image 
                         sh 'docker compose --file operate-docker-container-setup/backup-test-server/testsvrbkup-docker-compose.yml up -d'
 
-                        //clean up docker image previously attached to TESTsvr3114394F 
                         sh 'docker image prune --all --force'
-                    }
 
+                    }
                 }
+
             }
         }
 
         stage ('ST6 3114394F') {
             steps {
+                
                 script {
+
                     if (USER_SELECTION == PROCEED_PRODUCTION){
+
                         echo "ST6 3114394F: Production server is updated"
+
                     }else if (USER_SELECTION == ROLLBACK_TEST) {
+
                         echo "ST6 3114394F: TEST server is rollback"
+
                     }
                 }
+
             }
         }
 
