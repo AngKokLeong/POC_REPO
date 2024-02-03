@@ -107,7 +107,7 @@ pipeline {
             }
         }
 
-    /*  stage ('ST5 3114394F') {
+        stage ('ST5 3114394F') {
             when {
                 anyOf {
                     equals expected: ROLLBACK_TEST, actual: USER_SELECTION;
@@ -140,7 +140,7 @@ pipeline {
             }
         }
 
-        stage ('ST6 3114394F') {
+       /* stage ('ST6 3114394F') {
             steps {
                 script {
                     if (USER_SELECTION == PROCEED_PRODUCTION){
