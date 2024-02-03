@@ -65,7 +65,7 @@ pipeline {
                     CURRENT_HTTP_STATUS = 'asd'
 
                     // verify the status from cat command tallies with HTTP_OK_STATUS     
-                    if (CURRENT_HTTP_STATUS != HTTP_OK_STATUS) {
+                    if (CURRENT_HTTP_STATUS == HTTP_OK_STATUS) {
                         WEB_TEST_RESULT = WEB_TEST_RESULT_PASS
                         echo 'ST3 3114394F: Test result for TEST server PASSED'
                     }else {
