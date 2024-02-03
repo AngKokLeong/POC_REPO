@@ -7,8 +7,10 @@ puppet resource file 'remove-tmp-folder' path=/tmp/3114394F/work ensure=absent r
 puppet resource exec 'create-tmp-folder' command="/bin/mkdir --parent /tmp/3114394F/work"
 
 # Clone github repository POC_Repo to container's /tmp/3114394F/work folder
+echo "Cloning the POC_REPO git repository to /tmp/3114394F/work folder"
 git clone https://github.com/AngKokLeong/POC_REPO.git /tmp/3114394F/work
 
 
 # Copy new index.html to replace /var/www/html/index.html
+echo "Copying 3114394F_index.html to /var/www/html/"
 cp /tmp/3114394F/work/3114394F_index.html /var/www/html/index.html
