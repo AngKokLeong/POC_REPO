@@ -60,9 +60,9 @@ pipeline {
                         // https://stackoverflow.com/questions/36547680/how-do-i-get-the-output-of-a-shell-command-executed-using-into-a-variable-from-j
                         // https://www.jenkins.io/doc/pipeline/steps/workflow-durable-task-step/#sh-shell-script
 
-                    //CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
+                    CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
 
-                    CURRENT_HTTP_STATUS = 'asd'
+                    //CURRENT_HTTP_STATUS = 'asd'
 
                     // verify the status from cat command tallies with HTTP_OK_STATUS     
                     if (CURRENT_HTTP_STATUS == HTTP_OK_STATUS) {
