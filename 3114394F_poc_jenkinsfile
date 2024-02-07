@@ -137,6 +137,12 @@ pipeline {
         }
 
         stage ('ST6 3114394F') {
+            when {
+                anyOf {
+                    equals expected: ROLLBACK_TEST, actual: USER_SELECTION;
+                    equals expected: PROCEED_PRODUCTION, actual: USER_SELECTION;
+                }
+            }
             steps {
                 
                 script {
