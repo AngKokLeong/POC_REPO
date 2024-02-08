@@ -53,9 +53,9 @@ pipeline {
                 
                 script {
 
-                    //CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
+                    CURRENT_HTTP_STATUS = sh (script: 'cat /tmp/TEST-result-file', returnStdout: true).trim()
 
-                    CURRENT_HTTP_STATUS = 'asd'
+                    //CURRENT_HTTP_STATUS = 'asd'
   
                     if (CURRENT_HTTP_STATUS == HTTP_OK_STATUS) {
                         WEB_TEST_RESULT = WEB_TEST_RESULT_PASS
