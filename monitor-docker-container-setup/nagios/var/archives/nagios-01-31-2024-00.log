@@ -1,0 +1,212 @@
+[1706606475] Nagios 4.5.0 starting... (PID=34517)
+[1706606475] Local time is Tue Jan 30 17:21:15 +08 2024
+[1706606475] LOG VERSION: 2.0
+[1706606475] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706606475] qh: core query handler registered
+[1706606475] qh: echo service query handler registered
+[1706606475] qh: help for the query handler registered
+[1706606475] wproc: Successfully registered manager as @wproc with query handler
+[1706606475] wproc: Registry request: name=Core Worker 34518;pid=34518
+[1706606475] wproc: Registry request: name=Core Worker 34519;pid=34519
+[1706606475] wproc: Registry request: name=Core Worker 34521;pid=34521
+[1706606475] wproc: Registry request: name=Core Worker 34520;pid=34520
+[1706606475] wproc: Registry request: name=Core Worker 34523;pid=34523
+[1706606475] wproc: Registry request: name=Core Worker 34522;pid=34522
+[1706606477] Successfully launched command file worker with pid 34526
+[1706606665] Caught SIGTERM, shutting down...
+[1706606665] Caught SIGTERM, shutting down...
+[1706606665] Caught SIGTERM, shutting down...
+[1706606665] Successfully shutdown... (PID=34517)
+[1706606673] Nagios 4.5.0 starting... (PID=34709)
+[1706606673] Local time is Tue Jan 30 17:24:33 +08 2024
+[1706606673] LOG VERSION: 2.0
+[1706606673] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706606673] qh: core query handler registered
+[1706606673] qh: echo service query handler registered
+[1706606673] qh: help for the query handler registered
+[1706606673] wproc: Successfully registered manager as @wproc with query handler
+[1706606673] wproc: Registry request: name=Core Worker 34713;pid=34713
+[1706606673] wproc: Registry request: name=Core Worker 34710;pid=34710
+[1706606673] wproc: Registry request: name=Core Worker 34715;pid=34715
+[1706606673] wproc: Registry request: name=Core Worker 34712;pid=34712
+[1706606673] wproc: Registry request: name=Core Worker 34711;pid=34711
+[1706606673] wproc: Registry request: name=Core Worker 34714;pid=34714
+[1706606673] Successfully launched command file worker with pid 34718
+[1706606700] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 22: Connection refused
+[1706606760] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 22: Connection refused
+[1706606820] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 22: Connection refused
+[1706606880] SERVICE ALERT: localhost;SSH;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 22: Connection refused
+[1706611946] Warning: A system time change of 3482 seconds (0d 0h 58m 2s forwards in time) has been detected.  Compensating...
+[1706613754] Auto-save of retention data completed successfully.
+[1706614590] SERVICE ALERT: localhost;SSH;OK;HARD;1;SSH OK - OpenSSH_7.6p1 Ubuntu-4ubuntu0.7 (protocol 2.0)
+[1706617354] Auto-save of retention data completed successfully.
+[1706620954] Auto-save of retention data completed successfully.
+[1706622503] Caught SIGTERM, shutting down...
+[1706622503] Successfully shutdown... (PID=34709)
+[1706622517] Nagios 4.5.0 starting... (PID=962)
+[1706622517] Local time is Tue Jan 30 21:48:37 +08 2024
+[1706622517] LOG VERSION: 2.0
+[1706622517] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706622517] qh: core query handler registered
+[1706622517] qh: echo service query handler registered
+[1706622517] qh: help for the query handler registered
+[1706622517] wproc: Successfully registered manager as @wproc with query handler
+[1706622517] wproc: Registry request: name=Core Worker 964;pid=964
+[1706622517] wproc: Registry request: name=Core Worker 965;pid=965
+[1706622517] wproc: Registry request: name=Core Worker 968;pid=968
+[1706622517] wproc: Registry request: name=Core Worker 967;pid=967
+[1706622517] wproc: Registry request: name=Core Worker 966;pid=966
+[1706622517] wproc: Registry request: name=Core Worker 969;pid=969
+[1706622517] Successfully launched command file worker with pid 1012
+[1706623808] Caught SIGTERM, shutting down...
+[1706623808] Caught SIGTERM, shutting down...
+[1706623808] Successfully shutdown... (PID=962)
+[1706623808] Nagios 4.5.0 starting... (PID=7909)
+[1706623808] Local time is Tue Jan 30 22:10:08 +08 2024
+[1706623808] LOG VERSION: 2.0
+[1706623808] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706623808] qh: core query handler registered
+[1706623808] qh: echo service query handler registered
+[1706623808] qh: help for the query handler registered
+[1706623808] wproc: Successfully registered manager as @wproc with query handler
+[1706623808] wproc: Registry request: name=Core Worker 7915;pid=7915
+[1706623808] wproc: Registry request: name=Core Worker 7914;pid=7914
+[1706623808] wproc: Registry request: name=Core Worker 7913;pid=7913
+[1706623808] wproc: Registry request: name=Core Worker 7912;pid=7912
+[1706623808] wproc: Registry request: name=Core Worker 7911;pid=7911
+[1706623808] wproc: Registry request: name=Core Worker 7910;pid=7910
+[1706623808] Successfully launched command file worker with pid 7917
+[1706623872] SERVICE ALERT: apacheweb.localdomain;HTTP;CRITICAL;SOFT;1;connect to address 192.168.200.51 and port 80: Connection refused
+[1706623932] SERVICE ALERT: apacheweb.localdomain;HTTP;CRITICAL;SOFT;2;connect to address 192.168.200.51 and port 80: Connection refused
+[1706623992] SERVICE ALERT: apacheweb.localdomain;HTTP;CRITICAL;SOFT;3;connect to address 192.168.200.51 and port 80: Connection refused
+[1706624012] Caught SIGTERM, shutting down...
+[1706624012] Caught SIGTERM, shutting down...
+[1706624012] Caught SIGTERM, shutting down...
+[1706624012] Successfully shutdown... (PID=7909)
+[1706624012] Nagios 4.5.0 starting... (PID=8757)
+[1706624012] Local time is Tue Jan 30 22:13:32 +08 2024
+[1706624012] LOG VERSION: 2.0
+[1706624012] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706624012] qh: core query handler registered
+[1706624012] qh: echo service query handler registered
+[1706624012] qh: help for the query handler registered
+[1706624012] wproc: Successfully registered manager as @wproc with query handler
+[1706624012] wproc: Registry request: name=Core Worker 8759;pid=8759
+[1706624012] wproc: Registry request: name=Core Worker 8758;pid=8758
+[1706624012] wproc: Registry request: name=Core Worker 8763;pid=8763
+[1706624012] wproc: Registry request: name=Core Worker 8762;pid=8762
+[1706624012] wproc: Registry request: name=Core Worker 8761;pid=8761
+[1706624012] wproc: Registry request: name=Core Worker 8760;pid=8760
+[1706624012] Successfully launched command file worker with pid 8766
+[1706624052] SERVICE ALERT: apacheweb.localdomain;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.51 and port 80: Connection refused
+[1706624065] SERVICE ALERT: postgres.localdomain;HTTP;CRITICAL;SOFT;1;connect to address 192.168.200.52 and port 80: Connection refused
+[1706624125] SERVICE ALERT: postgres.localdomain;HTTP;CRITICAL;SOFT;2;connect to address 192.168.200.52 and port 80: Connection refused
+[1706624185] SERVICE ALERT: postgres.localdomain;HTTP;CRITICAL;SOFT;3;connect to address 192.168.200.52 and port 80: Connection refused
+[1706624245] SERVICE ALERT: postgres.localdomain;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.52 and port 80: Connection refused
+[1706624490] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 22: Connection refused
+[1706624550] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 22: Connection refused
+[1706624610] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 22: Connection refused
+[1706624670] SERVICE ALERT: localhost;SSH;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 22: Connection refused
+[1706624734] Caught SIGTERM, shutting down...
+[1706624734] Successfully shutdown... (PID=8757)
+[1706624758] Nagios 4.5.0 starting... (PID=1099)
+[1706624758] Local time is Tue Jan 30 22:25:58 +08 2024
+[1706624758] LOG VERSION: 2.0
+[1706624758] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706624758] qh: core query handler registered
+[1706624758] qh: echo service query handler registered
+[1706624758] qh: help for the query handler registered
+[1706624758] wproc: Successfully registered manager as @wproc with query handler
+[1706624758] wproc: Registry request: name=Core Worker 1106;pid=1106
+[1706624758] wproc: Registry request: name=Core Worker 1102;pid=1102
+[1706624758] wproc: Registry request: name=Core Worker 1103;pid=1103
+[1706624758] wproc: Registry request: name=Core Worker 1104;pid=1104
+[1706624758] wproc: Registry request: name=Core Worker 1105;pid=1105
+[1706624758] wproc: Registry request: name=Core Worker 1107;pid=1107
+[1706624758] Successfully launched command file worker with pid 1128
+[1706624775] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706624775] SERVICE ALERT: postgres.localdomain;PING;CRITICAL;SOFT;1;CRITICAL - Host Unreachable (192.168.200.52)
+[1706624778] HOST ALERT: postgres.localdomain;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.52)
+[1706624796] SERVICE ALERT: postgres.localdomain;SSH;CRITICAL;HARD;1;connect to address 192.168.200.52 and port 22: No route to host
+[1706624838] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.51)
+[1706624838] SERVICE ALERT: apacheweb.localdomain;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706624838] SERVICE ALERT: postgres.localdomain;PING;CRITICAL;HARD;4;CRITICAL - Host Unreachable (192.168.200.52)
+[1706624841] HOST ALERT: postgres.localdomain;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.52)
+[1706624901] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.51)
+[1706624901] SERVICE ALERT: apacheweb.localdomain;SSH;CRITICAL;HARD;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706624904] HOST ALERT: postgres.localdomain;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.52)
+[1706624964] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706624967] HOST ALERT: postgres.localdomain;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625027] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625030] HOST ALERT: postgres.localdomain;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625090] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;6;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625093] HOST ALERT: postgres.localdomain;DOWN;SOFT;6;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625154] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;7;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625156] HOST ALERT: postgres.localdomain;DOWN;SOFT;7;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625217] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;8;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625219] HOST ALERT: postgres.localdomain;DOWN;SOFT;8;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625280] HOST ALERT: apacheweb.localdomain;DOWN;SOFT;9;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625282] HOST ALERT: postgres.localdomain;DOWN;SOFT;9;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625343] HOST ALERT: apacheweb.localdomain;DOWN;HARD;10;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625344] Caught SIGTERM, shutting down...
+[1706625344] Caught SIGTERM, shutting down...
+[1706625344] Caught SIGTERM, shutting down...
+[1706625344] Successfully shutdown... (PID=1099)
+[1706625344] Nagios 4.5.0 starting... (PID=5182)
+[1706625344] Local time is Tue Jan 30 22:35:44 +08 2024
+[1706625344] LOG VERSION: 2.0
+[1706625344] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706625344] qh: core query handler registered
+[1706625344] qh: echo service query handler registered
+[1706625344] qh: help for the query handler registered
+[1706625344] wproc: Successfully registered manager as @wproc with query handler
+[1706625344] wproc: Registry request: name=Core Worker 5184;pid=5184
+[1706625344] wproc: Registry request: name=Core Worker 5185;pid=5185
+[1706625344] wproc: Registry request: name=Core Worker 5183;pid=5183
+[1706625344] wproc: Registry request: name=Core Worker 5186;pid=5186
+[1706625344] wproc: Registry request: name=Core Worker 5187;pid=5187
+[1706625344] wproc: Registry request: name=Core Worker 5188;pid=5188
+[1706625344] Successfully launched command file worker with pid 5192
+[1706625345] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625393] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 22: Connection refused
+[1706625408] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625447] SERVICE ALERT: AngKokLeong-Database-Server;HTTP;CRITICAL;HARD;1;connect to address 192.168.200.52 and port 80: No route to host
+[1706625453] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 22: Connection refused
+[1706625471] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.52)
+[1706625513] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 22: Connection refused
+[1706625520] SERVICE ALERT: AngKokLeong-Web-Server;HTTP;CRITICAL;SOFT;1;CRITICAL - Socket timeout
+[1706625525] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625535] HOST ALERT: AngKokLeong-Database-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706625573] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 22: Connection refused
+[1706625583] SERVICE ALERT: AngKokLeong-Web-Server;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.51 and port 80: No route to host
+[1706625586] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625613] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625637] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706625649] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625712] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625775] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625838] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;6;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625901] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;7;CRITICAL - Host Unreachable (192.168.200.51)
+[1706625964] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;8;CRITICAL - Host Unreachable (192.168.200.51)
+[1706626028] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;9;CRITICAL - Host Unreachable (192.168.200.51)
+[1706626091] HOST ALERT: AngKokLeong-Web-Server;DOWN;HARD;10;CRITICAL - Host Unreachable (192.168.200.51)
+[1706628943] Auto-save of retention data completed successfully.
+[1706629377] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 80: Connection refused
+[1706629437] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 80: Connection refused
+[1706629497] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;3;HTTP CRITICAL - No data received from host
+[1706629514] SERVICE ALERT: AngKokLeong-Web-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706629515] EXTERNAL COMMAND: SCHEDULE_FORCED_HOST_CHECK;AngKokLeong-Web-Server;1706629513
+[1706629518] HOST ALERT: AngKokLeong-Web-Server;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.08 ms
+[1706629534] SERVICE ALERT: AngKokLeong-Web-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706629552] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706629551
+[1706629552] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;HARD;4;HTTP CRITICAL - No data received from host
+[1706629565] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706629564
+[1706629799] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706629798
+[1706630113] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630119] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630137] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706630176] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;HARD;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630182] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630245] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630308] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630371] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.51)

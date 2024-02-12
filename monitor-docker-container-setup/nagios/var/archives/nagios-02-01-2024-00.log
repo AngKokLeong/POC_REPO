@@ -1,0 +1,747 @@
+[1706630400] LOG ROTATION: DAILY
+[1706630400] LOG VERSION: 2.0
+[1706630400] CURRENT HOST STATE: AngKokLeong-Database-Server;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706630400] CURRENT HOST STATE: AngKokLeong-Nagios-Server;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.05 ms
+[1706630400] CURRENT HOST STATE: AngKokLeong-Web-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Database-Server;HTTP;CRITICAL;HARD;1;connect to address 192.168.200.52 and port 80: Connection refused
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Database-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Database-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Nagios-Server;HTTP;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 80: Connection refused
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Nagios-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.05 ms
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Nagios-Server;SSH;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 22: Connection refused
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Web-Server;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.51 and port 80: No route to host
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Web-Server;PING;CRITICAL;HARD;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706630400] CURRENT SERVICE STATE: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706630434] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;SSH;STARTED; Service appears to have started flapping (22.4% change >= 20.0% threshold)
+[1706630434] SERVICE ALERT: AngKokLeong-Web-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706630437] HOST ALERT: AngKokLeong-Web-Server;UP;SOFT;1;PING OK - Packet loss = 16%, RTA = 204.84 ms
+[1706630477] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;PING;STARTED; Service appears to have started flapping (22.4% change >= 20.0% threshold)
+[1706630477] SERVICE ALERT: AngKokLeong-Web-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.10 ms
+[1706630891] Caught SIGTERM, shutting down...
+[1706630891] Successfully shutdown... (PID=5182)
+[1706687904] Nagios 4.5.0 starting... (PID=1120)
+[1706687904] Local time is Wed Jan 31 15:58:24 +08 2024
+[1706687904] LOG VERSION: 2.0
+[1706687904] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706687904] qh: core query handler registered
+[1706687904] qh: echo service query handler registered
+[1706687904] qh: help for the query handler registered
+[1706687904] wproc: Successfully registered manager as @wproc with query handler
+[1706687904] wproc: Registry request: name=Core Worker 1123;pid=1123
+[1706687904] wproc: Registry request: name=Core Worker 1128;pid=1128
+[1706687904] wproc: Registry request: name=Core Worker 1127;pid=1127
+[1706687904] wproc: Registry request: name=Core Worker 1126;pid=1126
+[1706687904] wproc: Registry request: name=Core Worker 1125;pid=1125
+[1706687904] wproc: Registry request: name=Core Worker 1124;pid=1124
+[1706687904] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;PING;STARTED; Service appears to have started flapping (21.8% change >= 20.0% threshold)
+[1706687904] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;SSH;STARTED; Service appears to have started flapping (21.8% change >= 20.0% threshold)
+[1706687904] Successfully launched command file worker with pid 1182
+[1706687904] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;1;CRITICAL - Network Unreachable (192.168.200.52)
+[1706687967] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.52)
+[1706688031] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.52)
+[1706688052] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;SOFT;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706688055] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706688094] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.52)
+[1706688107] SERVICE ALERT: AngKokLeong-Database-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.52)
+[1706688115] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;4;connect to address 192.168.200.51 and port 22: No route to host
+[1706688118] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.51)
+[1706688157] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.52)
+[1706688173] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706688182] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.51)
+[1706688207] SERVICE ALERT: AngKokLeong-Database-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.52 and port 22: No route to host
+[1706688221] HOST ALERT: AngKokLeong-Database-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.08 ms
+[1706688243] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;PING;1706688240
+[1706688246] HOST ALERT: AngKokLeong-Web-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.08 ms
+[1706688247] SERVICE ALERT: AngKokLeong-Web-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.12 ms
+[1706688252] EXTERNAL COMMAND: SCHEDULE_FORCED_HOST_CHECK;AngKokLeong-Web-Server;1706688251
+[1706688259] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;SSH;1706688258
+[1706688259] SERVICE ALERT: AngKokLeong-Web-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706688266] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706688265
+[1706688276] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706688275
+[1706688281] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;SSH;1706688280
+[1706688281] SERVICE ALERT: AngKokLeong-Database-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706688286] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;PING;1706688285
+[1706688290] SERVICE ALERT: AngKokLeong-Database-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.06 ms
+[1706688291] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;HTTP;1706688290
+[1706689574] Caught SIGTERM, shutting down...
+[1706689574] Caught SIGTERM, shutting down...
+[1706689574] Caught SIGTERM, shutting down...
+[1706689574] Successfully shutdown... (PID=1120)
+[1706691028] Nagios 4.5.0 starting... (PID=6466)
+[1706691028] Local time is Wed Jan 31 16:50:28 +08 2024
+[1706691028] LOG VERSION: 2.0
+[1706691028] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706691028] qh: core query handler registered
+[1706691028] qh: echo service query handler registered
+[1706691028] qh: help for the query handler registered
+[1706691028] wproc: Successfully registered manager as @wproc with query handler
+[1706691028] wproc: Registry request: name=Core Worker 6468;pid=6468
+[1706691028] wproc: Registry request: name=Core Worker 6467;pid=6467
+[1706691028] wproc: Registry request: name=Core Worker 6470;pid=6470
+[1706691028] wproc: Registry request: name=Core Worker 6471;pid=6471
+[1706691028] wproc: Registry request: name=Core Worker 6469;pid=6469
+[1706691028] wproc: Registry request: name=Core Worker 6472;pid=6472
+[1706691028] Warning: Duplicate definition found for service 'HTTP' on host 'AngKokLeong-Web-Server' (config file '/usr/local/nagios/etc/objects/localhost.cfg', starting on line 172)
+[1706691029] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;PING;STARTED; Service appears to have started flapping (26.8% change >= 20.0% threshold)
+[1706691029] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;SSH;STARTED; Service appears to have started flapping (26.8% change >= 20.0% threshold)
+[1706691030] Successfully launched command file worker with pid 6481
+[1706691054] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706691052
+[1706691054] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;OK;HARD;1;HTTP OK: HTTP/1.1 200 OK - 11192 bytes in 0.002 second response time
+[1706691060] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706691059
+[1706691789] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;SOFT;1;PING CRITICAL - Packet loss = 100%
+[1706691809] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706691852] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;HARD;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706691872] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.51)
+[1706691872] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706691935] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.51)
+[1706691999] HOST ALERT: AngKokLeong-Web-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.08 ms
+[1706692119] SERVICE ALERT: AngKokLeong-Database-Server;PING;CRITICAL;SOFT;1;PING CRITICAL - Packet loss = 100%
+[1706692153] SERVICE ALERT: AngKokLeong-Web-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.17 ms
+[1706692169] SERVICE ALERT: AngKokLeong-Web-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706692183] SERVICE ALERT: AngKokLeong-Database-Server;PING;OK;SOFT;2;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706692590] Caught SIGTERM, shutting down...
+[1706692590] Caught SIGTERM, shutting down...
+[1706692590] Caught SIGTERM, shutting down...
+[1706692590] Successfully shutdown... (PID=6466)
+[1706692590] Nagios 4.5.0 starting... (PID=13010)
+[1706692590] Local time is Wed Jan 31 17:16:30 +08 2024
+[1706692590] LOG VERSION: 2.0
+[1706692590] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706692590] qh: core query handler registered
+[1706692590] qh: echo service query handler registered
+[1706692590] qh: help for the query handler registered
+[1706692590] wproc: Successfully registered manager as @wproc with query handler
+[1706692590] wproc: Registry request: name=Core Worker 13019;pid=13019
+[1706692590] wproc: Registry request: name=Core Worker 13020;pid=13020
+[1706692590] wproc: Registry request: name=Core Worker 13021;pid=13021
+[1706692590] wproc: Registry request: name=Core Worker 13024;pid=13024
+[1706692590] wproc: Registry request: name=Core Worker 13022;pid=13022
+[1706692590] wproc: Registry request: name=Core Worker 13026;pid=13026
+[1706692590] Warning: Duplicate definition found for service 'HTTP' on host 'AngKokLeong-Web-Server' (config file '/usr/local/nagios/etc/objects/localhost.cfg', starting on line 172)
+[1706692590] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;PING;STARTED; Service appears to have started flapping (35.6% change >= 20.0% threshold)
+[1706692590] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;SSH;STARTED; Service appears to have started flapping (35.6% change >= 20.0% threshold)
+[1706692590] Successfully launched command file worker with pid 13027
+[1706692607] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706692606
+[1706692613] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706692611
+[1706693479] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706693478
+[1706693510] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706693509
+[1706693657] Caught SIGTERM, shutting down...
+[1706693657] Caught SIGTERM, shutting down...
+[1706693657] Caught SIGTERM, shutting down...
+[1706693657] Successfully shutdown... (PID=13010)
+[1706693657] Nagios 4.5.0 starting... (PID=16300)
+[1706693657] Local time is Wed Jan 31 17:34:17 +08 2024
+[1706693657] LOG VERSION: 2.0
+[1706693657] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706693657] qh: core query handler registered
+[1706693657] qh: echo service query handler registered
+[1706693657] qh: help for the query handler registered
+[1706693657] wproc: Successfully registered manager as @wproc with query handler
+[1706693657] wproc: Registry request: name=Core Worker 16306;pid=16306
+[1706693657] wproc: Registry request: name=Core Worker 16309;pid=16309
+[1706693657] wproc: Registry request: name=Core Worker 16310;pid=16310
+[1706693657] wproc: Registry request: name=Core Worker 16311;pid=16311
+[1706693657] wproc: Registry request: name=Core Worker 16305;pid=16305
+[1706693657] wproc: Registry request: name=Core Worker 16307;pid=16307
+[1706693657] Warning: Duplicate definition found for service 'HTTP' on host 'AngKokLeong-Web-Server' (config file '/usr/local/nagios/etc/objects/localhost.cfg', starting on line 172)
+[1706693657] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;PING;STARTED; Service appears to have started flapping (31.9% change >= 20.0% threshold)
+[1706693657] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;SSH;STARTED; Service appears to have started flapping (32.8% change >= 20.0% threshold)
+[1706693657] Successfully launched command file worker with pid 16318
+[1706693669] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706693668
+[1706693690] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;PING;1706693689
+[1706693698] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;SSH;1706693696
+[1706693833] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706693832
+[1706693897] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706693896
+[1706694393] Caught SIGTERM, shutting down...
+[1706694393] Caught SIGTERM, shutting down...
+[1706694393] Caught SIGTERM, shutting down...
+[1706694393] Successfully shutdown... (PID=16300)
+[1706694393] Nagios 4.5.0 starting... (PID=18621)
+[1706694393] Local time is Wed Jan 31 17:46:33 +08 2024
+[1706694393] LOG VERSION: 2.0
+[1706694393] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706694393] qh: core query handler registered
+[1706694393] qh: echo service query handler registered
+[1706694393] qh: help for the query handler registered
+[1706694393] wproc: Successfully registered manager as @wproc with query handler
+[1706694393] wproc: Registry request: name=Core Worker 18625;pid=18625
+[1706694393] wproc: Registry request: name=Core Worker 18627;pid=18627
+[1706694393] wproc: Registry request: name=Core Worker 18623;pid=18623
+[1706694393] wproc: Registry request: name=Core Worker 18624;pid=18624
+[1706694393] wproc: Registry request: name=Core Worker 18622;pid=18622
+[1706694393] wproc: Registry request: name=Core Worker 18626;pid=18626
+[1706694393] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;PING;STARTED; Service appears to have started flapping (22.2% change >= 20.0% threshold)
+[1706694393] SERVICE FLAPPING ALERT: AngKokLeong-Web-Server;SSH;STARTED; Service appears to have started flapping (22.2% change >= 20.0% threshold)
+[1706694393] Successfully launched command file worker with pid 18628
+[1706694405] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706694404
+[1706694405] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 80: Connection refused
+[1706694411] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Web-Server;HTTP;1706694410
+[1706694465] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 80: Connection refused
+[1706694525] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 80: Connection refused
+[1706694585] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 80: Connection refused
+[1706695468] Caught SIGTERM, shutting down...
+[1706695468] Caught SIGTERM, shutting down...
+[1706695468] Successfully shutdown... (PID=18621)
+[1706696256] Nagios 4.5.0 starting... (PID=22814)
+[1706696256] Local time is Wed Jan 31 18:17:36 +08 2024
+[1706696256] LOG VERSION: 2.0
+[1706696256] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706696256] qh: core query handler registered
+[1706696256] qh: echo service query handler registered
+[1706696256] qh: help for the query handler registered
+[1706696256] wproc: Successfully registered manager as @wproc with query handler
+[1706696256] wproc: Registry request: name=Core Worker 22817;pid=22817
+[1706696256] wproc: Registry request: name=Core Worker 22820;pid=22820
+[1706696256] wproc: Registry request: name=Core Worker 22816;pid=22816
+[1706696256] wproc: Registry request: name=Core Worker 22818;pid=22818
+[1706696256] wproc: Registry request: name=Core Worker 22815;pid=22815
+[1706696256] wproc: Registry request: name=Core Worker 22819;pid=22819
+[1706696256] Successfully launched command file worker with pid 22822
+[1706696275] Caught SIGTERM, shutting down...
+[1706696275] Caught SIGTERM, shutting down...
+[1706696275] Caught SIGTERM, shutting down...
+[1706696275] Successfully shutdown... (PID=22814)
+[1706696275] Nagios 4.5.0 starting... (PID=22857)
+[1706696275] Local time is Wed Jan 31 18:17:55 +08 2024
+[1706696275] LOG VERSION: 2.0
+[1706696275] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706696275] qh: core query handler registered
+[1706696275] qh: echo service query handler registered
+[1706696275] qh: help for the query handler registered
+[1706696275] wproc: Successfully registered manager as @wproc with query handler
+[1706696275] wproc: Registry request: name=Core Worker 22867;pid=22867
+[1706696275] wproc: Registry request: name=Core Worker 22864;pid=22864
+[1706696275] wproc: Registry request: name=Core Worker 22865;pid=22865
+[1706696275] wproc: Registry request: name=Core Worker 22862;pid=22862
+[1706696275] wproc: Registry request: name=Core Worker 22868;pid=22868
+[1706696275] wproc: Registry request: name=Core Worker 22866;pid=22866
+[1706696275] Successfully launched command file worker with pid 22871
+[1706696356] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706696356] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;SOFT;1;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706696416] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706696416] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;SOFT;2;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706696476] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706696476] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;SOFT;3;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706696506] Caught SIGTERM, shutting down...
+[1706696506] Caught SIGTERM, shutting down...
+[1706696506] Caught SIGTERM, shutting down...
+[1706696506] Successfully shutdown... (PID=22857)
+[1706696506] Nagios 4.5.0 starting... (PID=23463)
+[1706696506] Local time is Wed Jan 31 18:21:46 +08 2024
+[1706696506] LOG VERSION: 2.0
+[1706696506] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706696506] qh: core query handler registered
+[1706696506] qh: echo service query handler registered
+[1706696506] qh: help for the query handler registered
+[1706696506] wproc: Successfully registered manager as @wproc with query handler
+[1706696506] wproc: Registry request: name=Core Worker 23466;pid=23466
+[1706696506] wproc: Registry request: name=Core Worker 23465;pid=23465
+[1706696506] wproc: Registry request: name=Core Worker 23468;pid=23468
+[1706696506] wproc: Registry request: name=Core Worker 23467;pid=23467
+[1706696506] wproc: Registry request: name=Core Worker 23470;pid=23470
+[1706696506] wproc: Registry request: name=Core Worker 23469;pid=23469
+[1706696506] Successfully launched command file worker with pid 23478
+[1706696516] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote];1706696514
+[1706696516] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706696516] SERVICE NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;notify-service-by-email;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706696516] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;HARD;4;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706696516] wproc: NOTIFY job 0 from worker Core Worker 23465 is a non-check helper but exited with return code 127
+[1706696516] wproc:   host=AngKokLeong-Database-Server; service=Root Partition [Remote]; contact=nagiosadmin
+[1706696516] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706696516] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706696516] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706696816] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706696918] Caught SIGTERM, shutting down...
+[1706696918] Caught SIGTERM, shutting down...
+[1706696918] Caught SIGTERM, shutting down...
+[1706696918] Successfully shutdown... (PID=23463)
+[1706696918] Nagios 4.5.0 starting... (PID=25601)
+[1706696918] Local time is Wed Jan 31 18:28:38 +08 2024
+[1706696918] LOG VERSION: 2.0
+[1706696918] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706696918] qh: core query handler registered
+[1706696918] qh: echo service query handler registered
+[1706696918] qh: help for the query handler registered
+[1706696918] wproc: Successfully registered manager as @wproc with query handler
+[1706696918] wproc: Registry request: name=Core Worker 25602;pid=25602
+[1706696918] wproc: Registry request: name=Core Worker 25607;pid=25607
+[1706696918] wproc: Registry request: name=Core Worker 25603;pid=25603
+[1706696918] wproc: Registry request: name=Core Worker 25606;pid=25606
+[1706696918] wproc: Registry request: name=Core Worker 25604;pid=25604
+[1706696918] wproc: Registry request: name=Core Worker 25605;pid=25605
+[1706696918] Successfully launched command file worker with pid 25610
+[1706696927] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote];1706696926
+[1706696927] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706697222] Caught SIGTERM, shutting down...
+[1706697222] Successfully shutdown... (PID=25601)
+[1706697434] Nagios 4.5.0 starting... (PID=1048)
+[1706697434] Local time is Wed Jan 31 18:37:14 +08 2024
+[1706697434] LOG VERSION: 2.0
+[1706697434] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706697434] qh: core query handler registered
+[1706697434] qh: echo service query handler registered
+[1706697434] qh: help for the query handler registered
+[1706697434] wproc: Successfully registered manager as @wproc with query handler
+[1706697434] wproc: Registry request: name=Core Worker 1054;pid=1054
+[1706697434] wproc: Registry request: name=Core Worker 1053;pid=1053
+[1706697434] wproc: Registry request: name=Core Worker 1055;pid=1055
+[1706697434] wproc: Registry request: name=Core Worker 1062;pid=1062
+[1706697434] wproc: Registry request: name=Core Worker 1063;pid=1063
+[1706697434] wproc: Registry request: name=Core Worker 1052;pid=1052
+[1706697434] Successfully launched command file worker with pid 1089
+[1706697435] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;1;CRITICAL - Network Unreachable (192.168.200.52)
+[1706697498] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.52)
+[1706697561] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.52)
+[1706697606] HOST ALERT: AngKokLeong-Database-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.06 ms
+[1706697625] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote];1706697623
+[1706697625] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706697682] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote];1706697672
+[1706697682] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706697878] Caught SIGTERM, shutting down...
+[1706697878] Caught SIGTERM, shutting down...
+[1706697878] Caught SIGTERM, shutting down...
+[1706697878] Successfully shutdown... (PID=1048)
+[1706697878] Nagios 4.5.0 starting... (PID=6311)
+[1706697878] Local time is Wed Jan 31 18:44:38 +08 2024
+[1706697878] LOG VERSION: 2.0
+[1706697878] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706697878] qh: core query handler registered
+[1706697878] qh: echo service query handler registered
+[1706697878] qh: help for the query handler registered
+[1706697878] wproc: Successfully registered manager as @wproc with query handler
+[1706697878] wproc: Registry request: name=Core Worker 6315;pid=6315
+[1706697878] wproc: Registry request: name=Core Worker 6313;pid=6313
+[1706697878] wproc: Registry request: name=Core Worker 6316;pid=6316
+[1706697878] wproc: Registry request: name=Core Worker 6314;pid=6314
+[1706697878] wproc: Registry request: name=Core Worker 6318;pid=6318
+[1706697878] wproc: Registry request: name=Core Worker 6317;pid=6317
+[1706697878] Successfully launched command file worker with pid 6323
+[1706697982] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706698283] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706698582] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706698882] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706699182] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706699482] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706699529] Caught SIGTERM, shutting down...
+[1706699529] Successfully shutdown... (PID=6311)
+[1706699627] Nagios 4.5.0 starting... (PID=1034)
+[1706699627] Local time is Wed Jan 31 19:13:47 +08 2024
+[1706699627] LOG VERSION: 2.0
+[1706699627] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706699627] qh: core query handler registered
+[1706699627] qh: echo service query handler registered
+[1706699627] qh: help for the query handler registered
+[1706699627] wproc: Successfully registered manager as @wproc with query handler
+[1706699627] wproc: Registry request: name=Core Worker 1040;pid=1040
+[1706699627] wproc: Registry request: name=Core Worker 1039;pid=1039
+[1706699627] wproc: Registry request: name=Core Worker 1043;pid=1043
+[1706699627] wproc: Registry request: name=Core Worker 1045;pid=1045
+[1706699627] wproc: Registry request: name=Core Worker 1041;pid=1041
+[1706699627] wproc: Registry request: name=Core Worker 1042;pid=1042
+[1706699627] Successfully launched command file worker with pid 1063
+[1706699673] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706699677] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706699738] SERVICE ALERT: AngKokLeong-Web-Server;PING;OK;SOFT;2;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706699741] HOST ALERT: AngKokLeong-Web-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706699782] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706700082] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706700382] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706700382] SERVICE NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;notify-service-by-email;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706700382] wproc: NOTIFY job 7 from worker Core Worker 1040 is a non-check helper but exited with return code 127
+[1706700382] wproc:   host=AngKokLeong-Database-Server; service=Root Partition [Remote]; contact=nagiosadmin
+[1706700382] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706700382] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706700382] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706700428] Caught SIGTERM, shutting down...
+[1706700428] Caught SIGTERM, shutting down...
+[1706700428] Caught SIGTERM, shutting down...
+[1706700428] Successfully shutdown... (PID=1034)
+[1706700428] Nagios 4.5.0 starting... (PID=6899)
+[1706700428] Local time is Wed Jan 31 19:27:08 +08 2024
+[1706700428] LOG VERSION: 2.0
+[1706700428] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706700428] qh: core query handler registered
+[1706700428] qh: echo service query handler registered
+[1706700428] qh: help for the query handler registered
+[1706700428] wproc: Successfully registered manager as @wproc with query handler
+[1706700428] wproc: Registry request: name=Core Worker 6902;pid=6902
+[1706700428] wproc: Registry request: name=Core Worker 6901;pid=6901
+[1706700428] wproc: Registry request: name=Core Worker 6903;pid=6903
+[1706700428] wproc: Registry request: name=Core Worker 6905;pid=6905
+[1706700428] wproc: Registry request: name=Core Worker 6906;pid=6906
+[1706700428] wproc: Registry request: name=Core Worker 6904;pid=6904
+[1706700428] Successfully launched command file worker with pid 6909
+[1706700465] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote];1706700464
+[1706700465] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706700545] Caught SIGTERM, shutting down...
+[1706700545] Caught SIGTERM, shutting down...
+[1706700545] Caught SIGTERM, shutting down...
+[1706700545] Successfully shutdown... (PID=6899)
+[1706700545] Nagios 4.5.0 starting... (PID=7293)
+[1706700545] Local time is Wed Jan 31 19:29:05 +08 2024
+[1706700545] LOG VERSION: 2.0
+[1706700545] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706700545] qh: core query handler registered
+[1706700545] qh: echo service query handler registered
+[1706700545] qh: help for the query handler registered
+[1706700545] wproc: Successfully registered manager as @wproc with query handler
+[1706700545] wproc: Registry request: name=Core Worker 7299;pid=7299
+[1706700545] wproc: Registry request: name=Core Worker 7297;pid=7297
+[1706700545] wproc: Registry request: name=Core Worker 7295;pid=7295
+[1706700545] wproc: Registry request: name=Core Worker 7294;pid=7294
+[1706700545] wproc: Registry request: name=Core Worker 7296;pid=7296
+[1706700545] wproc: Registry request: name=Core Worker 7298;pid=7298
+[1706700545] Successfully launched command file worker with pid 7302
+[1706700564] EXTERNAL COMMAND: DISABLE_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote]
+[1706700568] EXTERNAL COMMAND: ENABLE_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote]
+[1706700568] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706700572] EXTERNAL COMMAND: SCHEDULE_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote];1706700571
+[1706700572] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706700637] Caught SIGTERM, shutting down...
+[1706700637] Caught SIGTERM, shutting down...
+[1706700637] Caught SIGTERM, shutting down...
+[1706700637] Successfully shutdown... (PID=7293)
+[1706700637] Nagios 4.5.0 starting... (PID=8061)
+[1706700637] Local time is Wed Jan 31 19:30:37 +08 2024
+[1706700637] LOG VERSION: 2.0
+[1706700637] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706700637] qh: core query handler registered
+[1706700637] qh: echo service query handler registered
+[1706700637] qh: help for the query handler registered
+[1706700637] wproc: Successfully registered manager as @wproc with query handler
+[1706700637] wproc: Registry request: name=Core Worker 8067;pid=8067
+[1706700637] wproc: Registry request: name=Core Worker 8066;pid=8066
+[1706700637] wproc: Registry request: name=Core Worker 8065;pid=8065
+[1706700637] wproc: Registry request: name=Core Worker 8062;pid=8062
+[1706700637] wproc: Registry request: name=Core Worker 8063;pid=8063
+[1706700637] wproc: Registry request: name=Core Worker 8064;pid=8064
+[1706700637] Successfully launched command file worker with pid 8082
+[1706700759] Caught SIGTERM, shutting down...
+[1706700759] Caught SIGTERM, shutting down...
+[1706700759] Caught SIGTERM, shutting down...
+[1706700759] Successfully shutdown... (PID=8061)
+[1706700759] Nagios 4.5.0 starting... (PID=8267)
+[1706700759] Local time is Wed Jan 31 19:32:39 +08 2024
+[1706700759] LOG VERSION: 2.0
+[1706700759] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706700759] qh: core query handler registered
+[1706700759] qh: echo service query handler registered
+[1706700759] qh: help for the query handler registered
+[1706700759] wproc: Successfully registered manager as @wproc with query handler
+[1706700759] wproc: Registry request: name=Core Worker 8273;pid=8273
+[1706700759] wproc: Registry request: name=Core Worker 8277;pid=8277
+[1706700759] wproc: Registry request: name=Core Worker 8275;pid=8275
+[1706700759] wproc: Registry request: name=Core Worker 8276;pid=8276
+[1706700759] wproc: Registry request: name=Core Worker 8278;pid=8278
+[1706700759] wproc: Registry request: name=Core Worker 8274;pid=8274
+[1706700759] Successfully launched command file worker with pid 8279
+[1706700825] Caught SIGTERM, shutting down...
+[1706700825] Caught SIGTERM, shutting down...
+[1706700825] Caught SIGTERM, shutting down...
+[1706700825] Successfully shutdown... (PID=8267)
+[1706700825] Nagios 4.5.0 starting... (PID=8585)
+[1706700825] Local time is Wed Jan 31 19:33:45 +08 2024
+[1706700825] LOG VERSION: 2.0
+[1706700825] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706700825] qh: core query handler registered
+[1706700825] qh: echo service query handler registered
+[1706700825] qh: help for the query handler registered
+[1706700825] wproc: Successfully registered manager as @wproc with query handler
+[1706700825] wproc: Registry request: name=Core Worker 8590;pid=8590
+[1706700825] wproc: Registry request: name=Core Worker 8594;pid=8594
+[1706700825] wproc: Registry request: name=Core Worker 8593;pid=8593
+[1706700825] wproc: Registry request: name=Core Worker 8592;pid=8592
+[1706700825] wproc: Registry request: name=Core Worker 8595;pid=8595
+[1706700825] wproc: Registry request: name=Core Worker 8591;pid=8591
+[1706700825] Successfully launched command file worker with pid 8600
+[1706700850] Caught SIGTERM, shutting down...
+[1706700850] Caught SIGTERM, shutting down...
+[1706700850] Caught SIGTERM, shutting down...
+[1706700850] Successfully shutdown... (PID=8585)
+[1706700850] Nagios 4.5.0 starting... (PID=8712)
+[1706700850] Local time is Wed Jan 31 19:34:10 +08 2024
+[1706700850] LOG VERSION: 2.0
+[1706700850] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706700850] qh: core query handler registered
+[1706700850] qh: echo service query handler registered
+[1706700850] qh: help for the query handler registered
+[1706700850] wproc: Successfully registered manager as @wproc with query handler
+[1706700850] wproc: Registry request: name=Core Worker 8717;pid=8717
+[1706700850] wproc: Registry request: name=Core Worker 8718;pid=8718
+[1706700850] wproc: Registry request: name=Core Worker 8716;pid=8716
+[1706700850] wproc: Registry request: name=Core Worker 8719;pid=8719
+[1706700850] wproc: Registry request: name=Core Worker 8714;pid=8714
+[1706700850] wproc: Registry request: name=Core Worker 8715;pid=8715
+[1706700850] Successfully launched command file worker with pid 8723
+[1706700931] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];UNKNOWN;SOFT;1;UNKNOWN - check_by_ssh: Remote command execution failed: Host key verification failed.
+[1706700991] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];UNKNOWN;SOFT;2;UNKNOWN - check_by_ssh: Remote command execution failed: Host key verification failed.
+[1706701019] Caught SIGTERM, shutting down...
+[1706701019] Caught SIGTERM, shutting down...
+[1706701019] Caught SIGTERM, shutting down...
+[1706701019] Successfully shutdown... (PID=8712)
+[1706701019] Nagios 4.5.0 starting... (PID=9691)
+[1706701019] Local time is Wed Jan 31 19:36:59 +08 2024
+[1706701019] LOG VERSION: 2.0
+[1706701019] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706701019] qh: core query handler registered
+[1706701019] qh: echo service query handler registered
+[1706701019] qh: help for the query handler registered
+[1706701019] wproc: Successfully registered manager as @wproc with query handler
+[1706701019] wproc: Registry request: name=Core Worker 9694;pid=9694
+[1706701019] wproc: Registry request: name=Core Worker 9695;pid=9695
+[1706701019] wproc: Registry request: name=Core Worker 9701;pid=9701
+[1706701019] wproc: Registry request: name=Core Worker 9699;pid=9699
+[1706701019] wproc: Registry request: name=Core Worker 9700;pid=9700
+[1706701019] wproc: Registry request: name=Core Worker 9696;pid=9696
+[1706701019] Successfully launched command file worker with pid 9706
+[1706701042] Caught SIGTERM, shutting down...
+[1706701042] Caught SIGTERM, shutting down...
+[1706701042] Caught SIGTERM, shutting down...
+[1706701042] Successfully shutdown... (PID=9691)
+[1706701042] Nagios 4.5.0 starting... (PID=9815)
+[1706701042] Local time is Wed Jan 31 19:37:22 +08 2024
+[1706701042] LOG VERSION: 2.0
+[1706701042] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706701042] qh: core query handler registered
+[1706701042] qh: echo service query handler registered
+[1706701042] qh: help for the query handler registered
+[1706701042] wproc: Successfully registered manager as @wproc with query handler
+[1706701042] wproc: Registry request: name=Core Worker 9818;pid=9818
+[1706701042] wproc: Registry request: name=Core Worker 9820;pid=9820
+[1706701042] wproc: Registry request: name=Core Worker 9819;pid=9819
+[1706701042] wproc: Registry request: name=Core Worker 9821;pid=9821
+[1706701042] wproc: Registry request: name=Core Worker 9822;pid=9822
+[1706701042] wproc: Registry request: name=Core Worker 9823;pid=9823
+[1706701042] Successfully launched command file worker with pid 9824
+[1706701123] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706701123] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;SOFT;1;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706701183] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706701183] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;SOFT;2;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706701243] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706701243] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;SOFT;3;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706701303] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706701303] SERVICE NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;notify-service-by-email;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706701303] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;HARD;4;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706701303] wproc: NOTIFY job 2 from worker Core Worker 9822 is a non-check helper but exited with return code 127
+[1706701303] wproc:   host=AngKokLeong-Database-Server; service=Root Partition [Remote]; contact=nagiosadmin
+[1706701303] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706701303] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706701303] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706701325] Caught SIGTERM, shutting down...
+[1706701325] Successfully shutdown... (PID=9815)
+[1706706844] Nagios 4.5.0 starting... (PID=1067)
+[1706706844] Local time is Wed Jan 31 21:14:04 +08 2024
+[1706706844] LOG VERSION: 2.0
+[1706706844] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706706844] qh: core query handler registered
+[1706706844] qh: echo service query handler registered
+[1706706844] qh: help for the query handler registered
+[1706706844] wproc: Successfully registered manager as @wproc with query handler
+[1706706844] wproc: Registry request: name=Core Worker 1078;pid=1078
+[1706706844] wproc: Registry request: name=Core Worker 1081;pid=1081
+[1706706844] wproc: Registry request: name=Core Worker 1077;pid=1077
+[1706706844] wproc: Registry request: name=Core Worker 1080;pid=1080
+[1706706844] wproc: Registry request: name=Core Worker 1079;pid=1079
+[1706706844] wproc: Registry request: name=Core Worker 1082;pid=1082
+[1706706844] Successfully launched command file worker with pid 1089
+[1706706844] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;1;CRITICAL - Network Unreachable (192.168.200.52)
+[1706706907] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.52)
+[1706706971] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.52)
+[1706706987] SERVICE ALERT: AngKokLeong-Database-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.52 and port 22: No route to host
+[1706707010] SERVICE ALERT: AngKokLeong-Database-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.52)
+[1706707034] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.52)
+[1706707047] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706707065] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706707092] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706707095] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.52)
+[1706707110] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.51)
+[1706707147] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706707159] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;6;CRITICAL - Host Unreachable (192.168.200.52)
+[1706707174] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.51)
+[1706707222] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;7;CRITICAL - Host Unreachable (192.168.200.52)
+[1706707237] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706707285] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;8;CRITICAL - Host Unreachable (192.168.200.52)
+[1706707300] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.51)
+[1706707349] HOST ALERT: AngKokLeong-Database-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706707364] HOST ALERT: AngKokLeong-Web-Server;UP;SOFT;1;PING OK - Packet loss = 0%, RTA = 0.09 ms
+[1706707366] SERVICE ALERT: AngKokLeong-Web-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706707389] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706707389] SERVICE NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;notify-service-by-email;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706707389] wproc: NOTIFY job 6 from worker Core Worker 1081 is a non-check helper but exited with return code 127
+[1706707389] wproc:   host=AngKokLeong-Database-Server; service=Root Partition [Remote]; contact=nagiosadmin
+[1706707389] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706707389] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706707389] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706707444] SERVICE ALERT: AngKokLeong-Web-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706707584] SERVICE ALERT: AngKokLeong-Database-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706707612] SERVICE ALERT: AngKokLeong-Database-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.14 ms
+[1706707666] Caught SIGTERM, shutting down...
+[1706707666] Caught SIGTERM, shutting down...
+[1706707666] Caught SIGTERM, shutting down...
+[1706707666] Successfully shutdown... (PID=1067)
+[1706707666] Nagios 4.5.0 starting... (PID=5747)
+[1706707666] Local time is Wed Jan 31 21:27:46 +08 2024
+[1706707666] LOG VERSION: 2.0
+[1706707666] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706707666] qh: core query handler registered
+[1706707666] qh: echo service query handler registered
+[1706707666] qh: help for the query handler registered
+[1706707666] wproc: Successfully registered manager as @wproc with query handler
+[1706707666] wproc: Registry request: name=Core Worker 5752;pid=5752
+[1706707666] wproc: Registry request: name=Core Worker 5754;pid=5754
+[1706707666] wproc: Registry request: name=Core Worker 5755;pid=5755
+[1706707666] wproc: Registry request: name=Core Worker 5758;pid=5758
+[1706707666] wproc: Registry request: name=Core Worker 5757;pid=5757
+[1706707666] wproc: Registry request: name=Core Worker 5756;pid=5756
+[1706707666] Successfully launched command file worker with pid 5761
+[1706707682] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Database-Server;Root Partition [Remote];1706707681
+[1706707682] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706707982] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706708282] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706708582] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706708882] SERVICE NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;Root Partition [Remote];OK;notify-service-by-email;DISK OK - free space: / 80891 MiB (85.07% inode=95%):
+[1706708882] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];OK;HARD;1;DISK OK - free space: / 80891 MiB (85.07% inode=95%):
+[1706708882] wproc: NOTIFY job 9 from worker Core Worker 5758 is a non-check helper but exited with return code 127
+[1706708882] wproc:   host=AngKokLeong-Database-Server; service=Root Partition [Remote]; contact=nagiosadmin
+[1706708882] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706708882] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706708882] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706710681] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706710680
+[1706710981] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;OK;HARD;1;HTTP OK: HTTP/1.1 302 Found - 509 bytes in 0.001 second response time
+[1706711106] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706711105
+[1706711207] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706711206
+[1706711250] EXTERNAL COMMAND: SCHEDULE_FORCED_SVC_CHECK;AngKokLeong-Nagios-Server;HTTP;1706711249
+[1706711265] Auto-save of retention data completed successfully.
+[1706711358] Caught SIGTERM, shutting down...
+[1706711358] Caught SIGTERM, shutting down...
+[1706711358] Caught SIGTERM, shutting down...
+[1706711358] Successfully shutdown... (PID=5747)
+[1706711358] Nagios 4.5.0 starting... (PID=16184)
+[1706711358] Local time is Wed Jan 31 22:29:18 +08 2024
+[1706711358] LOG VERSION: 2.0
+[1706711358] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706711358] qh: core query handler registered
+[1706711358] qh: echo service query handler registered
+[1706711358] qh: help for the query handler registered
+[1706711358] wproc: Successfully registered manager as @wproc with query handler
+[1706711358] wproc: Registry request: name=Core Worker 16187;pid=16187
+[1706711358] wproc: Registry request: name=Core Worker 16185;pid=16185
+[1706711358] wproc: Registry request: name=Core Worker 16186;pid=16186
+[1706711358] wproc: Registry request: name=Core Worker 16189;pid=16189
+[1706711358] wproc: Registry request: name=Core Worker 16188;pid=16188
+[1706711358] wproc: Registry request: name=Core Worker 16190;pid=16190
+[1706711358] Successfully launched command file worker with pid 16193
+[1706711417] Caught SIGTERM, shutting down...
+[1706711417] Caught SIGTERM, shutting down...
+[1706711417] Caught SIGTERM, shutting down...
+[1706711417] Successfully shutdown... (PID=16184)
+[1706711417] Nagios 4.5.0 starting... (PID=16290)
+[1706711417] Local time is Wed Jan 31 22:30:17 +08 2024
+[1706711417] LOG VERSION: 2.0
+[1706711417] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706711417] qh: core query handler registered
+[1706711417] qh: echo service query handler registered
+[1706711417] qh: help for the query handler registered
+[1706711417] wproc: Successfully registered manager as @wproc with query handler
+[1706711417] wproc: Registry request: name=Core Worker 16295;pid=16295
+[1706711417] wproc: Registry request: name=Core Worker 16292;pid=16292
+[1706711417] wproc: Registry request: name=Core Worker 16291;pid=16291
+[1706711417] wproc: Registry request: name=Core Worker 16294;pid=16294
+[1706711417] wproc: Registry request: name=Core Worker 16293;pid=16293
+[1706711417] wproc: Registry request: name=Core Worker 16296;pid=16296
+[1706711417] Successfully launched command file worker with pid 16297
+[1706711433] Caught SIGTERM, shutting down...
+[1706711433] Caught SIGTERM, shutting down...
+[1706711433] Caught SIGTERM, shutting down...
+[1706711433] Successfully shutdown... (PID=16290)
+[1706711433] Nagios 4.5.0 starting... (PID=16512)
+[1706711433] Local time is Wed Jan 31 22:30:33 +08 2024
+[1706711433] LOG VERSION: 2.0
+[1706711433] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706711433] qh: core query handler registered
+[1706711433] qh: echo service query handler registered
+[1706711433] qh: help for the query handler registered
+[1706711433] wproc: Successfully registered manager as @wproc with query handler
+[1706711433] wproc: Registry request: name=Core Worker 16514;pid=16514
+[1706711433] wproc: Registry request: name=Core Worker 16517;pid=16517
+[1706711433] wproc: Registry request: name=Core Worker 16518;pid=16518
+[1706711433] wproc: Registry request: name=Core Worker 16516;pid=16516
+[1706711433] wproc: Registry request: name=Core Worker 16515;pid=16515
+[1706711433] wproc: Registry request: name=Core Worker 16513;pid=16513
+[1706711433] Successfully launched command file worker with pid 16527
+[1706711514] SERVICE ALERT: AngKokLeong-Database-Server;HTTP;CRITICAL;SOFT;1;connect to address 192.168.200.52 and port 80: Connection refused
+[1706711574] SERVICE ALERT: AngKokLeong-Database-Server;HTTP;CRITICAL;SOFT;2;connect to address 192.168.200.52 and port 80: Connection refused
+[1706711634] SERVICE ALERT: AngKokLeong-Database-Server;HTTP;CRITICAL;SOFT;3;connect to address 192.168.200.52 and port 80: Connection refused
+[1706711642] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 22: Connection refused
+[1706711678] SERVICE ALERT: AngKokLeong-Web-Server;HTTP;CRITICAL;SOFT;1;connect to address 192.168.200.51 and port 80: Connection refused
+[1706711694] SERVICE ALERT: AngKokLeong-Database-Server;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.52 and port 80: Connection refused
+[1706711702] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 22: Connection refused
+[1706711738] SERVICE ALERT: AngKokLeong-Web-Server;HTTP;CRITICAL;SOFT;2;connect to address 192.168.200.51 and port 80: Connection refused
+[1706711762] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 22: Connection refused
+[1706711798] SERVICE ALERT: AngKokLeong-Web-Server;HTTP;CRITICAL;SOFT;3;connect to address 192.168.200.51 and port 80: Connection refused
+[1706711822] SERVICE ALERT: AngKokLeong-Nagios-Server;SSH;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 22: Connection refused
+[1706711858] SERVICE ALERT: AngKokLeong-Web-Server;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.51 and port 80: Connection refused
+[1706711896] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 80: Connection refused
+[1706711956] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 80: Connection refused
+[1706712016] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 80: Connection refused
+[1706712076] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 80: Connection refused
+[1706712376] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;OK;HARD;1;HTTP OK: HTTP/1.1 301 Moved Permanently - 545 bytes in 0.001 second response time
+[1706712676] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 80: Connection refused
+[1706712736] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 80: Connection refused
+[1706712796] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;OK;SOFT;3;HTTP OK: HTTP/1.1 301 Moved Permanently - 545 bytes in 0.001 second response time
+[1706713135] Caught SIGTERM, shutting down...
+[1706713135] Caught SIGTERM, shutting down...
+[1706713135] Caught SIGTERM, shutting down...
+[1706713135] Successfully shutdown... (PID=16512)
+[1706713135] Nagios 4.5.0 starting... (PID=21435)
+[1706713135] Local time is Wed Jan 31 22:58:55 +08 2024
+[1706713135] LOG VERSION: 2.0
+[1706713135] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706713135] qh: core query handler registered
+[1706713135] qh: echo service query handler registered
+[1706713135] qh: help for the query handler registered
+[1706713135] wproc: Successfully registered manager as @wproc with query handler
+[1706713135] wproc: Registry request: name=Core Worker 21437;pid=21437
+[1706713135] wproc: Registry request: name=Core Worker 21438;pid=21438
+[1706713135] wproc: Registry request: name=Core Worker 21439;pid=21439
+[1706713135] wproc: Registry request: name=Core Worker 21441;pid=21441
+[1706713135] wproc: Registry request: name=Core Worker 21442;pid=21442
+[1706713135] wproc: Registry request: name=Core Worker 21440;pid=21440
+[1706713135] Successfully launched command file worker with pid 21443
+[1706713756] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 80: Connection refused
+[1706713816] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 80: Connection refused
+[1706713876] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 80: Connection refused
+[1706713936] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;OK;SOFT;4;HTTP OK: HTTP/1.1 301 Moved Permanently - 547 bytes in 0.001 second response time
+[1706714596] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 80: Connection refused
+[1706714656] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 80: Connection refused
+[1706714716] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;OK;SOFT;3;HTTP OK: HTTP/1.1 301 Moved Permanently - 547 bytes in 0.001 second response time
+[1706715976] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 80: Connection refused
+[1706716036] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 80: Connection refused
+[1706716096] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 80: Connection refused
+[1706716156] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 80: Connection refused
+[1706716390] Caught SIGTERM, shutting down...
+[1706716390] Successfully shutdown... (PID=21435)
+[1706716414] Nagios 4.5.0 starting... (PID=1035)
+[1706716414] Local time is Wed Jan 31 23:53:34 +08 2024
+[1706716414] LOG VERSION: 2.0
+[1706716414] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706716414] qh: core query handler registered
+[1706716414] qh: echo service query handler registered
+[1706716414] qh: help for the query handler registered
+[1706716414] wproc: Successfully registered manager as @wproc with query handler
+[1706716414] wproc: Registry request: name=Core Worker 1041;pid=1041
+[1706716414] wproc: Registry request: name=Core Worker 1046;pid=1046
+[1706716414] wproc: Registry request: name=Core Worker 1039;pid=1039
+[1706716414] wproc: Registry request: name=Core Worker 1044;pid=1044
+[1706716414] wproc: Registry request: name=Core Worker 1040;pid=1040
+[1706716414] wproc: Registry request: name=Core Worker 1038;pid=1038
+[1706716414] Successfully launched command file worker with pid 1088
+[1706716426] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;SOFT;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706716429] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706716450] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706716456] SERVICE FLAPPING ALERT: AngKokLeong-Nagios-Server;HTTP;STARTED; Service appears to have started flapping (21.1% change >= 20.0% threshold)
+[1706716456] SERVICE ALERT: AngKokLeong-Nagios-Server;HTTP;OK;HARD;1;HTTP OK: HTTP/1.1 301 Moved Permanently - 529 bytes in 0.001 second response time
+[1706716489] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;4;connect to address 192.168.200.51 and port 22: No route to host
+[1706716496] HOST ALERT: AngKokLeong-Web-Server;UP;SOFT;1;PING OK - Packet loss = 37%, RTA = 0.07 ms
+[1706716751] SERVICE ALERT: AngKokLeong-Web-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706716786] SERVICE ALERT: AngKokLeong-Web-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)

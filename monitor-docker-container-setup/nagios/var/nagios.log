@@ -1,0 +1,171 @@
+[1706716800] LOG ROTATION: DAILY
+[1706716800] LOG VERSION: 2.0
+[1706716800] CURRENT HOST STATE: AngKokLeong-Database-Server;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706716800] CURRENT HOST STATE: AngKokLeong-Nagios-Server;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.06 ms
+[1706716800] CURRENT HOST STATE: AngKokLeong-Web-Server;UP;HARD;1;PING OK - Packet loss = 0%, RTA = 0.06 ms
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Database-Server;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.52 and port 80: Connection refused
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Database-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.06 ms
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Database-Server;Root Partition [Remote];OK;HARD;1;DISK OK - free space: / 80846 MiB (85.02% inode=95%):
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Database-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Nagios-Server;HTTP;OK;HARD;1;HTTP OK: HTTP/1.1 301 Moved Permanently - 529 bytes in 0.001 second response time
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Nagios-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.08 ms
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Nagios-Server;Root Partition [Local];OK;HARD;1;DISK OK - free space: / 80846 MiB (85.02% inode=95%):
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Nagios-Server;SSH;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 22: Connection refused
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Web-Server;HTTP;CRITICAL;HARD;4;connect to address 192.168.200.51 and port 80: Connection refused
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Web-Server;PING;OK;HARD;1;PING OK - Packet loss = 0%, RTA = 0.07 ms
+[1706716800] CURRENT SERVICE STATE: AngKokLeong-Web-Server;SSH;OK;HARD;1;SSH OK - OpenSSH_9.2p1 Debian-2+deb12u2 (protocol 2.0)
+[1706717703] Caught SIGTERM, shutting down...
+[1706717703] Successfully shutdown... (PID=1035)
+[1706760212] Nagios 4.5.0 starting... (PID=1187)
+[1706760212] Local time is Thu Feb 01 12:03:32 +08 2024
+[1706760212] LOG VERSION: 2.0
+[1706760212] qh: Socket '/usr/local/nagios/var/rw/nagios.qh' successfully initialized
+[1706760212] qh: core query handler registered
+[1706760212] qh: echo service query handler registered
+[1706760212] qh: help for the query handler registered
+[1706760212] wproc: Successfully registered manager as @wproc with query handler
+[1706760212] wproc: Registry request: name=Core Worker 1189;pid=1189
+[1706760212] wproc: Registry request: name=Core Worker 1192;pid=1192
+[1706760212] wproc: Registry request: name=Core Worker 1194;pid=1194
+[1706760212] wproc: Registry request: name=Core Worker 1190;pid=1190
+[1706760212] wproc: Registry request: name=Core Worker 1191;pid=1191
+[1706760212] wproc: Registry request: name=Core Worker 1193;pid=1193
+[1706760212] Successfully launched command file worker with pid 1226
+[1706760212] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;1;CRITICAL - Network Unreachable (192.168.200.52)
+[1706760275] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760339] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760378] SERVICE ALERT: AngKokLeong-Database-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760402] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760415] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760429] SERVICE ALERT: AngKokLeong-Database-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.52 and port 22: No route to host
+[1706760433] SERVICE ALERT: AngKokLeong-Web-Server;PING;CRITICAL;HARD;1;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760460] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706760460] SERVICE ALERT: AngKokLeong-Database-Server;Root Partition [Remote];CRITICAL;HARD;1;(Return code of 255 for service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds)
+[1706760463] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760478] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;2;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760515] SERVICE ALERT: AngKokLeong-Web-Server;SSH;CRITICAL;HARD;1;connect to address 192.168.200.51 and port 22: No route to host
+[1706760526] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;6;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760541] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;3;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760589] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;7;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760604] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;4;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760652] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;8;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760667] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;5;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760715] HOST ALERT: AngKokLeong-Database-Server;DOWN;SOFT;9;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760730] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;6;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760760] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706760778] HOST NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760778] HOST ALERT: AngKokLeong-Database-Server;DOWN;HARD;10;CRITICAL - Host Unreachable (192.168.200.52)
+[1706760778] wproc: NOTIFY job 6 from worker Core Worker 1194 is a non-check helper but exited with return code 127
+[1706760778] wproc:   host=AngKokLeong-Database-Server; service=(none); contact=nagiosadmin
+[1706760778] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706760778] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706760778] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706760793] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;7;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760856] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;8;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760919] HOST ALERT: AngKokLeong-Web-Server;DOWN;SOFT;9;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760983] HOST NOTIFICATION: nagiosadmin;AngKokLeong-Web-Server;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760983] HOST ALERT: AngKokLeong-Web-Server;DOWN;HARD;10;CRITICAL - Host Unreachable (192.168.200.51)
+[1706760983] wproc: NOTIFY job 8 from worker Core Worker 1190 is a non-check helper but exited with return code 127
+[1706760983] wproc:   host=AngKokLeong-Web-Server; service=(none); contact=nagiosadmin
+[1706760983] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706760983] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706760983] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706761060] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706761360] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706761660] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706761960] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706762260] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706762560] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706762860] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706763160] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706763461] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706763760] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706763811] Auto-save of retention data completed successfully.
+[1706764060] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706764360] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706764660] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706764960] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706765260] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706765560] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706765860] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706766160] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706766460] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706766760] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706767060] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706767360] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706767412] Auto-save of retention data completed successfully.
+[1706767660] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706767961] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706767981] HOST NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (192.168.200.52)
+[1706767981] wproc: NOTIFY job 63 from worker Core Worker 1192 is a non-check helper but exited with return code 127
+[1706767981] wproc:   host=AngKokLeong-Database-Server; service=(none); contact=nagiosadmin
+[1706767981] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706767981] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706767981] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706768186] HOST NOTIFICATION: nagiosadmin;AngKokLeong-Web-Server;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (192.168.200.51)
+[1706768186] wproc: NOTIFY job 64 from worker Core Worker 1193 is a non-check helper but exited with return code 127
+[1706768186] wproc:   host=AngKokLeong-Web-Server; service=(none); contact=nagiosadmin
+[1706768186] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706768186] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706768186] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706768260] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706768560] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706768860] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706769160] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706769460] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706769760] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706770060] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706770360] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706770660] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706770960] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706771012] Auto-save of retention data completed successfully.
+[1706771295] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706771574] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706771874] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706772175] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706772475] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706772775] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706773075] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706773375] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706773675] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706773975] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706774275] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706774575] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706774612] Auto-save of retention data completed successfully.
+[1706774875] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706775175] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706775195] HOST NOTIFICATION: nagiosadmin;AngKokLeong-Database-Server;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (192.168.200.52)
+[1706775195] wproc: NOTIFY job 119 from worker Core Worker 1191 is a non-check helper but exited with return code 127
+[1706775195] wproc:   host=AngKokLeong-Database-Server; service=(none); contact=nagiosadmin
+[1706775195] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706775195] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706775195] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706775386] HOST NOTIFICATION: nagiosadmin;AngKokLeong-Web-Server;DOWN;notify-host-by-email;CRITICAL - Host Unreachable (192.168.200.51)
+[1706775386] wproc: NOTIFY job 121 from worker Core Worker 1192 is a non-check helper but exited with return code 127
+[1706775386] wproc:   host=AngKokLeong-Web-Server; service=(none); contact=nagiosadmin
+[1706775386] wproc:   early_timeout=0; exited_ok=1; wait_status=32512; error_code=0;
+[1706775386] wproc:   stderr line 01: /bin/sh: 1: /bin/mail: not found
+[1706775386] wproc:   stderr line 02: /usr/bin/printf: write error: Broken pipe
+[1706775475] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706775775] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706776075] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706776375] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706776676] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706776975] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706777275] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706777575] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706777875] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706778175] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706778211] Auto-save of retention data completed successfully.
+[1706778475] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706778775] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706779075] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706779375] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706779675] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706779975] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706780275] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706780575] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706780875] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706781175] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706781476] Warning: Return code of 255 for check of service 'Root Partition [Remote]' on host 'AngKokLeong-Database-Server' was out of bounds.
+[1706783737] Warning: A system time change of 2129 seconds (0d 0h 35m 29s forwards in time) has been detected.  Compensating...
